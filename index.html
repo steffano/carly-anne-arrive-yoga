@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrive Yoga & Wellness Center | Jungle Psychedelic Disco Experience</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        disco: {
+                            plum: '#1e0a24',
+                            burgundy: '#3a072c',
+                            neonPink: '#ff007f',
+                            neonGreen: '#39ff14',
+                            sunsetOrange: '#ff5e00',
+                            peacockTeal: '#00f5d4',
+                            electricBlue: '#0077ff',
+                            radiantGold: '#ffd700',
+                            deepCharcoal: '#120c14'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Cinzel', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                    animation: {
+                        'gradient-breath': 'breath 8s ease-in-out infinite',
+                        'glowing-aura': 'aura 6s ease-in-out infinite alternate',
+                        'float-slow': 'float 10s ease-in-out infinite',
+                        'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        breath: {
+                            '0%, 100%': { transform: 'scale(1) opacity(0.85)', filter: 'blur(60px)' },
+                            '50%': { transform: 'scale(1.25) opacity(1)', filter: 'blur(40px)' },
+                        },
+                        aura: {
+                            '0%': { 'box-shadow': '0 0 40px #ff007f, 0 0 80px #3a072c' },
+                            '100%': { 'box-shadow': '0 0 60px #39ff14, 0 0 120px #00f5d4' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+                            '50%': { transform: 'translateY(-15px) rotate(2deg)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Premium Textures */
+        .psychedelic-mesh {
+            background-color: #1e0a24;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(255, 0, 127, 0.4) 0, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(57, 255, 20, 0.35) 0, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(0, 245, 212, 0.4) 0, transparent 50%),
+                radial-gradient(at 0% 100%, rgba(255, 94, 0, 0.3) 0, transparent 50%);
+        }
+
+        /* Cheetah Print Overlay Accents using CSS vectors */
+        .cheetah-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cpath d='M10,12 C12,9 16,11 15,14 C14,16 11,17 9,15 C8,13 9,12 10,12 Z M35,15 C38,13 41,16 39,19 C37,21 34,20 33,18 C32,16 33,15 35,15 Z M20,42 C24,40 26,44 23,46 C21,48 17,47 16,44 C16,42 18,41 20,42 Z M48,45 C51,43 54,46 52,49 C50,52 46,51 45,48 C45,46 47,44 48,45 Z' fill='%23ff007f' fill-opacity='0.15'/%3E%3C/svg%3E");
+        }
+
+        /* Zebra Accent lines */
+        .zebra-accent {
+            background: repeating-linear-gradient(
+                -45deg,
+                rgba(57, 255, 20, 0.15),
+                rgba(57, 255, 20, 0.15) 10px,
+                transparent 10px,
+                transparent 20px
+            );
+        }
+
+        /* Glassmorphism Presets */
+        .glass-card {
+            background: rgba(30, 10, 36, 0.65);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 0, 127, 0.25);
+        }
+
+        /* Custom Text Stroke effect for Disco Look */
+        .text-stroke {
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
+            color: transparent;
+        }
+
+        /* Hide Scrollbar for customized aesthetic */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #120c14;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3a072c;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ff007f;
+        }
+    </style>
+</head>
+<body class="bg-disco-deepCharcoal text-white font-sans overflow-x-hidden selection:bg-disco-neonPink selection:text-black">
+
+    <!-- ATMOSPHERIC BACKGROUND MATRIX -->
+    <div class="fixed inset-0 z-0 pointer-events-none opacity-40 psychedelic-mesh"></div>
+    <div class="fixed inset-0 z-0 pointer-events-none opacity-10 cheetah-pattern"></div>
+
+    <!-- GLOBAL HUD NAVIGATION -->
+    <nav class="sticky top-0 w-full z-50 glass-card border-b border-white/10 px-4 md:px-8 py-4 flex justify-between items-center transition-all duration-300">
+        <div class="flex items-center space-x-3">
+            <span class="font-serif text-2xl font-black tracking-widest bg-gradient-to-r from-disco-neonPink via-disco-radiantGold to-disco-neonGreen bg-clip-text text-transparent">ARRIVE</span>
+        </div>
+        <div class="hidden md:flex items-center space-x-8 font-semibold tracking-wider text-[11px] uppercase">
+            <a href="#hero" class="hover:text-disco-neonPink transition-colors">About</a>
+            <a href="#itinerary" class="hover:text-disco-neonGreen transition-colors">The Journey</a>
+            <a href="#quiz-funnel" class="hover:text-disco-peacockTeal text-disco-neonPink animate-pulse transition-colors">Mandatory Activation Quiz</a>
+            <a href="#marketplace" class="hover:text-disco-radiantGold transition-colors">Reserve Retreat</a>
+        </div>
+        <div class="flex items-center space-x-4">
+            <!-- Synthesizer Ambient Soundboard button -->
+            <button id="synth-player" onclick="toggleAtmosphere()" class="flex items-center space-x-2 bg-white/5 border border-white/20 hover:border-disco-neonGreen px-3 py-1.5 rounded-full transition-all text-xs tracking-widest text-white/80" title="Toggle Generative Jungle Ambient Music">
+                <span id="player-dot" class="w-2.5 h-2.5 rounded-full bg-white/40"></span>
+                <span id="player-text">PLAY AMBIENT</span>
+                <!-- CSS Visualizer bars -->
+                <div id="visualizer-bars" class="hidden flex items-end space-x-0.5 h-3">
+                    <span class="w-[2px] h-2 bg-disco-neonGreen animate-bounce" style="animation-duration: 0.7s"></span>
+                    <span class="w-[2px] h-3 bg-disco-neonGreen animate-bounce" style="animation-duration: 0.4s"></span>
+                    <span class="w-[2px] h-1.5 bg-disco-neonGreen animate-bounce" style="animation-duration: 0.9s"></span>
+                </div>
+            </button>
+
+            <a href="#marketplace" class="hidden sm:inline-block px-5 py-2.5 rounded-full text-xs uppercase font-bold tracking-widest bg-gradient-to-r from-disco-neonPink to-disco-sunsetOrange hover:from-disco-neonGreen hover:to-disco-peacockTeal text-black transition-all duration-500 shadow-lg shadow-disco-neonPink/30">
+                Book Spot Now
+            </a>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: THE COSMIC PSYCHEDELIC HERO -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center pt-12 pb-16 overflow-hidden px-4">
+        <!-- Breathing Circular Gradient Effect -->
+        <div class="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-tr from-disco-burgundy via-disco-neonPink to-disco-sunsetOrange opacity-60 mix-blend-screen animate-gradient-breath filter blur-[80px] -z-10"></div>
+        <div class="absolute w-[400px] h-[400px] rounded-full bg-gradient-to-bl from-disco-neonGreen via-disco-peacockTeal to-disco-electricBlue opacity-40 mix-blend-screen animate-gradient-breath filter blur-[60px] -z-10" style="animation-delay: -4s;"></div>
+
+        <div class="max-w-5xl text-center z-10 w-full">
+            <!-- Media/Graphic Interactive Canvas (Mirrors high-energy psychedelia of Costa Rica 2026) -->
+            <div class="mb-10 relative inline-block animate-float-slow w-full max-w-lg mx-auto">
+                <div class="absolute inset-0 bg-gradient-to-r from-disco-neonPink to-disco-neonGreen rounded-3xl opacity-30 blur-2xl"></div>
+                <div class="relative glass-card p-4 rounded-3xl border border-white/20 shadow-2xl">
+                    <div class="w-full h-80 bg-disco-plum/80 rounded-2xl overflow-hidden relative flex flex-col justify-between p-4 border border-disco-neonPink/30">
+                        <!-- INTERACTIVE BACKGROUND CANVAS -->
+                        <canvas id="psychedelic-canvas" class="absolute inset-0 w-full h-full object-cover z-0"></canvas>
+                        
+                        <div class="flex justify-between items-center z-10">
+                            <span class="text-[10px] uppercase font-bold tracking-widest px-2.5 py-1 rounded bg-disco-neonPink text-black font-semibold shadow-md">Interactive Canvas</span>
+                            <span class="text-[10px] text-disco-radiantGold font-serif tracking-widest font-black">COSTA RICA 2026</span>
+                        </div>
+
+                        <!-- Active alignment node indicators -->
+                        <div id="canvas-indicator" class="my-auto flex flex-col items-center justify-center z-10 space-y-2 cursor-pointer">
+                            <div class="w-2.5 h-2.5 rounded-full bg-disco-neonPink animate-ping"></div>
+                            <div class="px-3 py-1 rounded-full bg-black/40 border border-white/10 text-[9px] uppercase tracking-widest text-white/90">
+                                Drag mouse to shift energy vortex
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between items-end z-10">
+                            <p class="text-xs uppercase tracking-widest font-black font-serif bg-gradient-to-r from-disco-radiantGold to-disco-sunsetOrange bg-clip-text text-transparent">
+                                Jungle Psychedelic Disco Vision
+                            </p>
+                            <!-- Audio indicator inside Hero -->
+                            <div class="flex space-x-1.5 items-center bg-black/50 px-2.5 py-1 rounded-full border border-white/10">
+                                <span class="w-1.5 h-1.5 rounded-full bg-disco-neonGreen animate-pulse"></span>
+                                <span class="text-[8px] uppercase tracking-widest font-bold">Sound Gen Active</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-black tracking-tight leading-none mb-6">
+                Arrive to your moment <br>
+                <span class="bg-gradient-to-r from-disco-neonPink via-disco-sunsetOrange to-disco-neonGreen bg-clip-text text-transparent">with intention.</span>
+            </h1>
+            <p class="font-sans text-base sm:text-xl md:text-2xl text-white/80 max-w-3xl mx-auto font-light tracking-wide mb-10 leading-relaxed px-2">
+                A transformational wellness experience rooted in movement, mindfulness, and <span class="text-disco-neonGreen font-semibold">embodied self-leadership.</span>
+            </p>
+
+            <!-- Dual Alignment Funnel Selection Actions -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 px-4">
+                <a href="#quiz-funnel" class="w-full sm:w-auto px-8 py-4 rounded-full bg-white text-black font-bold tracking-widest uppercase hover:bg-disco-neonPink hover:text-white transition-all duration-300 transform hover:scale-105 shadow-xl shadow-white/10 flex items-center justify-center gap-2 text-xs sm:text-sm">
+                    <span>Awaken Your Journey</span>
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#marketplace" class="w-full sm:w-auto px-8 py-4 rounded-full border border-white/30 text-white/80 font-bold tracking-widest uppercase hover:border-disco-neonGreen hover:text-disco-neonGreen transition-all duration-300 text-xs sm:text-sm text-center bg-black/20 hover:bg-black/40">
+                    Skip directly to booking packages
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: THE MANDATORY LEAD CAPTURE FUNNEL (THE ELEMENTAL AWAKENING QUIZ) -->
+    <section id="quiz-funnel" class="relative py-24 px-4 glass-card border-y border-white/10 shadow-inner">
+        <div class="absolute inset-0 bg-cover bg-center mix-blend-luminosity opacity-10" style="background-image: url('image_1.png');"></div>
+        <div class="max-w-4xl mx-auto relative z-10">
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold tracking-widest text-disco-neonPink uppercase px-3 py-1 bg-disco-neonPink/10 rounded-full border border-disco-neonPink/30">Mandatory Portal Flow</span>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold tracking-wide mt-4 mb-4">Discover Your Retreat Archetype</h2>
+                <p class="text-white/60 max-w-xl mx-auto text-sm">
+                    Before initializing your booking container, uncover your dominant element alignment to personalize your itinerary assets.
+                </p>
+                <!-- Skip logic anchor embedded right inside the activation card frame -->
+                <div class="mt-3">
+                    <a href="#marketplace" class="text-xs text-white/40 hover:text-disco-neonGreen underline tracking-wider transition-colors">I know my path already - bypass and skip to payment matrix</a>
+                </div>
+            </div>
+
+            <!-- INTERACTIVE QUIZ ENGINE COMPONENT -->
+            <div class="glass-card rounded-3xl p-6 md:p-10 border border-disco-neonPink/40 shadow-2xl relative overflow-hidden transition-all duration-500">
+                <!-- Glowing localized aura behind interactive element -->
+                <div class="absolute -right-20 -top-20 w-40 h-40 rounded-full bg-disco-neonGreen filter blur-[50px] opacity-20"></div>
+
+                <div id="quiz-state-container">
+                    <!-- STEP 0: Lead Generation Data Integration -->
+                    <div id="quiz-step-0" class="space-y-6 transition-all duration-500">
+                        <h3 class="font-serif text-2xl font-bold text-disco-radiantGold">Initialize Consciousness Data Vector</h3>
+                        <p class="text-sm text-white/70 leading-relaxed">
+                            Provide your verification parameters to bind your results matrix to your profile.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs uppercase font-bold tracking-widest text-white/60 mb-2">Full Name</label>
+                                <input type="text" id="quiz-input-name" placeholder="Carly Anne" class="w-full bg-disco-deepCharcoal/80 border border-white/20 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-disco-neonPink focus:ring-1 focus:ring-disco-neonPink transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase font-bold tracking-widest text-white/60 mb-2">Email Address</label>
+                                <input type="email" id="quiz-input-email" placeholder="explorer@everybodyisayogabody.org" class="w-full bg-disco-deepCharcoal/80 border border-white/20 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-disco-neonPink focus:ring-1 focus:ring-disco-neonPink transition-colors">
+                            </div>
+                        </div>
+                        <div class="pt-2">
+                            <label class="inline-flex items-center space-x-3 cursor-pointer group">
+                                <input type="checkbox" id="quiz-input-check" class="form-checkbox h-5 w-5 text-disco-neonPink bg-disco-deepCharcoal border-white/30 rounded focus:ring-0" checked>
+                                <span class="text-xs sm:text-sm text-white/80 group-hover:text-white transition-colors">I acknowledge I am a spiritual being having a human experience.</span>
+                            </label>
+                        </div>
+                        <button onclick="advanceToQuestions()" class="w-full py-4 rounded-xl bg-gradient-to-r from-disco-neonPink to-disco-sunsetOrange text-black font-bold uppercase tracking-widest text-sm hover:from-disco-neonGreen hover:to-disco-peacockTeal transition-all duration-300 shadow-lg shadow-disco-neonPink/20 transform hover:-translate-y-0.5">
+                            Activate Quiz Matrix
+                        </button>
+                    </div>
+
+                    <!-- STEP 1: Core Engagement Dynamic Question Frame -->
+                    <div id="quiz-question-frame" class="hidden space-y-6 transition-all duration-500">
+                        <div class="flex justify-between items-center border-b border-white/10 pb-4">
+                            <span id="quiz-progress-text" class="text-xs font-bold tracking-widest uppercase text-disco-peacockTeal">Question 1 of 4</span>
+                            <div class="w-24 bg-white/10 h-1.5 rounded-full overflow-hidden">
+                                <div id="quiz-progress-bar" class="bg-disco-neonPink h-full transition-all duration-500" style="width: 25%"></div>
+                            </div>
+                        </div>
+                        <h4 id="quiz-question-text" class="font-serif text-xl md:text-2xl font-bold text-white leading-relaxed">When you imagine your dream retreat, what excites you most?</h4>
+                        <div id="quiz-options-grid" class="grid grid-cols-1 gap-3">
+                            <!-- Injected by script -->
+                        </div>
+                    </div>
+
+                    <!-- STEP 2: Outcome & Reflection Prompt Dynamic Presentation -->
+                    <div id="quiz-results-frame" class="hidden text-center space-y-6 py-4 transition-all duration-500">
+                        <div class="w-20 h-20 mx-auto rounded-full bg-gradient-to-tr from-disco-neonPink to-disco-neonGreen p-0.5 animate-bounce">
+                            <div class="w-full h-full bg-disco-plum rounded-full flex items-center justify-center font-serif text-2xl font-bold text-disco-radiantGold">⚡</div>
+                        </div>
+                        <h3 class="font-serif text-3xl font-bold tracking-wide">Matrix Synthesis Complete!</h3>
+                        <div class="p-6 bg-disco-plum/80 border border-disco-neonGreen/30 rounded-2xl max-w-2xl mx-auto text-center shadow-xl">
+                            <h4 id="result-archetype-title" class="font-serif text-2xl font-black uppercase tracking-wider text-disco-neonGreen mb-3">🔥 FIRE: THE PASSIONATE TRANSFORMER</h4>
+                            <p id="result-archetype-desc" class="text-sm text-white/80 leading-relaxed mb-4">
+                                You are bold, courageous, and full of vitality. Fire is your archetype — you ignite change and spark inspiration in those around you. At the retreat, you’ll thrive in sweat lodges, bonfires, and fiery practices that challenge you to rise.
+                            </p>
+                            <blockquote class="border-t border-white/10 pt-4 mt-2">
+                                <p class="text-xs uppercase font-bold tracking-widest text-disco-radiantGold mb-1">🌱 Inner Reflection Prompt</p>
+                                <p id="result-archetype-reflection" class="text-xs italic text-white/60 font-sans">
+                                    "Where in your life are you ready to burn away the old and make space for the new?"
+                                </p>
+                            </blockquote>
+                        </div>
+                        <p class="text-[11px] text-white/40 leading-relaxed max-w-md mx-auto">Your tailored configuration has been transmitted to your email. Proceed to lock in your custom checkout array below.</p>
+                        <a href="#marketplace" class="inline-block px-8 py-4 rounded-xl bg-disco-radiantGold text-black font-extrabold uppercase tracking-widest text-xs transition-all hover:bg-white shadow-xl shadow-disco-radiantGold/10 transform hover:-translate-y-0.5">
+                            Advance to Payment Infrastructure
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: THE IDENTITY MANIFESTO -->
+    <section class="relative py-28 px-4 overflow-hidden text-center">
+        <div class="absolute inset-0 bg-cover bg-center mix-blend-screen opacity-10" style="background-image: url('image_3.png');"></div>
+        <div class="max-w-5xl mx-auto relative z-10">
+            <h2 class="font-serif text-3xl md:text-5xl font-bold tracking-wide text-white leading-tight mb-8">
+                "This is not just yoga. This is a method, a movement, and <br class="hidden md:inline">
+                <span class="text-stroke font-black tracking-widest">a space for transformation."</span>
+            </h2>
+            <div class="inline-block py-4 px-8 md:px-12 rounded-full border-2 border-disco-neonGreen/80 bg-disco-deepCharcoal/90 relative group">
+                <div class="absolute inset-0 bg-disco-neonGreen/10 rounded-full blur opacity-50 group-hover:opacity-100 transition-opacity"></div>
+                <p class="font-serif text-base sm:text-lg md:text-2xl font-black tracking-widest text-disco-neonGreen uppercase relative z-10">
+                    &rarr; EVERY BODY IS A YOGA BODY &larr;
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: THE 5-DAY ELEMENTAL ITINERARY HIGH-FIDELITY EXPERIENCE MATRIX -->
+    <section id="itinerary" class="relative py-24 px-4 bg-disco-plum/40 border-t border-white/5">
+        <div class="absolute inset-0 bg-cover bg-center mix-blend-color-burn opacity-10" style="background-image: url('image_2.png');"></div>
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center mb-16">
+                <span class="text-xs font-bold tracking-widest text-disco-neonGreen uppercase px-3 py-1 bg-disco-neonGreen/10 rounded-full border border-disco-neonGreen/30">The Art Of Arrival Journey</span>
+                <h2 class="font-serif text-4xl md:text-6xl font-black mt-4 mb-4 tracking-wide">The Architectural Roadmap</h2>
+                <p class="text-white/60 max-w-2xl mx-auto text-sm md:text-base">
+                    A guided five-day immersive trajectory mapped directly across elemental archetypes. Review daily intervals, modules, and curated dress-code criteria.
+                </p>
+            </div>
+
+            <!-- Dynamic Elemental Row Containers -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                
+                <!-- Day 1: Earth -->
+                <div class="glass-card rounded-2xl p-5 border-t-4 border-t-disco-neonGreen/80 relative flex flex-col justify-between hover:border-r-white/20 hover:scale-[1.02] transition-all">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <span class="text-xs text-disco-neonGreen uppercase font-bold tracking-widest block">Day 1</span>
+                                <h3 class="font-serif text-xl font-bold tracking-wide">EARTH</h3>
+                            </div>
+                            <span class="text-2xl">🌱</span>
+                        </div>
+                        <p class="text-xs font-semibold text-white/50 border-b border-white/10 pb-2 mb-3">Arrival & Grounding</p>
+                        <ul class="text-xs space-y-2.5 text-white/80">
+                            <li><strong>Airport Pickup:</strong> Direct transit from SJO Airport container.</li>
+                            <li><strong>5:00 PM:</strong> Welcome Reception & Room Check-in matrix.</li>
+                            <li><strong>6:00 PM:</strong> Meet & Greet Orientation + Conscious Communication circle.</li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-white/10 flex justify-between items-center text-[10px] uppercase tracking-widest font-bold">
+                        <span class="text-white/50">Dress Aesthetic:</span>
+                        <span class="text-disco-neonGreen">Green & Neutrals</span>
+                    </div>
+                </div>
+
+                <!-- Day 2: Water -->
+                <div class="glass-card rounded-2xl p-5 border-t-4 border-t-disco-peacockTeal/80 relative flex flex-col justify-between hover:border-r-white/20 hover:scale-[1.02] transition-all">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <span class="text-xs text-disco-peacockTeal uppercase font-bold tracking-widest block">Day 2</span>
+                                <h3 class="font-serif text-xl font-bold tracking-wide">WATER</h3>
+                            </div>
+                            <span class="text-2xl">🌊</span>
+                        </div>
+                        <p class="text-xs font-semibold text-white/50 border-b border-white/10 pb-2 mb-3">Seeds of Hope & Flow</p>
+                        <ul class="text-xs space-y-2.5 text-white/80">
+                            <li><strong>7:00 AM:</strong> Rhythmic Yoga Flow Alignment.</li>
+                            <li><strong>10:00 AM:</strong> Immersive Excursion Modules:
+                                <span class="block text-[11px] text-white/60 pl-2 mt-1 italic">&bull; Rainmaker Hanging Bridges</span>
+                                <span class="block text-[11px] text-white/60 pl-2 italic">&bull; ATV to Waterfall / Rappelling</span>
+                                <span class="block text-[11px] text-white/60 pl-2 italic">&bull; Playa Hermosa Black Sand Beach</span>
+                            </li>
+                            <li><strong>2:00 PM:</strong> Structural Integration Lunch.</li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-white/10 flex justify-between items-center text-[10px] uppercase tracking-widest font-bold">
+                        <span class="text-white/50">Dress Aesthetic:</span>
+                        <span class="text-disco-peacockTeal">Blues & Teals</span>
+                    </div>
+                </div>
+
+                <!-- Day 3: Fire -->
+                <div class="glass-card rounded-2xl p-5 border-t-4 border-t-disco-sunsetOrange/80 relative flex flex-col justify-between hover:border-r-white/20 hover:scale-[1.02] transition-all">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <span class="text-xs text-disco-sunsetOrange uppercase font-bold tracking-widest block">Day 3</span>
+                                <h3 class="font-serif text-xl font-bold tracking-wide">FIRE</h3>
+                            </div>
+                            <span class="text-2xl">🔥</span>
+                        </div>
+                        <p class="text-xs font-semibold text-white/50 border-b border-white/10 pb-2 mb-3">Ignite & Transform</p>
+                        <ul class="text-xs space-y-2.5 text-white/80">
+                            <li><strong>8:00 AM:</strong> Dynamic Power Yoga Framework.</li>
+                            <li><strong>9:30 AM:</strong> Fire Adventures: Horseback Riding or deep Temazcal Sweat Lodge protocol.</li>
+                            <li><strong>2:00 PM:</strong> Headline Masterclass: "Crouching Yogi, Hidden Lion".</li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-white/10 flex justify-between items-center text-[10px] uppercase tracking-widest font-bold">
+                        <span class="text-white/50">Dress Aesthetic:</span>
+                        <span class="text-disco-sunsetOrange">All White Party</span>
+                    </div>
+                </div>
+
+                <!-- Day 4: Air -->
+                <div class="glass-card rounded-2xl p-5 border-t-4 border-t-white/80 relative flex flex-col justify-between hover:border-r-white/20 hover:scale-[1.02] transition-all">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <span class="text-xs text-white/60 uppercase font-bold tracking-widest block">Day 4</span>
+                                <h3 class="font-serif text-xl font-bold tracking-wide">AIR</h3>
+                            </div>
+                            <span class="text-2xl">🌬️</span>
+                        </div>
+                        <p class="text-xs font-semibold text-white/50 border-b border-white/10 pb-2 mb-3">Inner Realms & Voice</p>
+                        <ul class="text-xs space-y-2.5 text-white/80">
+                            <li><strong>8:00 AM:</strong> Breathwork Activation Blueprint.</li>
+                            <li><strong>9:30 AM:</strong> Sky Integration: High-canopy Ziplining or Butterfly Garden walking.</li>
+                            <li><strong>7:30 PM:</strong> Cosmic Connection Tapas Collective Banquet.</li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-white/10 flex justify-between items-center text-[10px] uppercase tracking-widest font-bold">
+                        <span class="text-white/50">Dress Aesthetic:</span>
+                        <span class="text-white">Airy & Transparent</span>
+                    </div>
+                </div>
+
+                <!-- Day 5: Avatar State -->
+                <div class="glass-card rounded-2xl p-5 border-t-4 border-t-disco-radiantGold/80 relative flex flex-col justify-between bg-gradient-to-b from-disco-plum to-disco-burgundy hover:border-r-white/20 hover:scale-[1.02] transition-all md:col-span-2 lg:col-span-1">
+                    <div class="absolute inset-0 zebra-accent opacity-5 rounded-2xl pointer-events-none"></div>
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <span class="text-xs text-disco-radiantGold uppercase font-bold tracking-widest block">Day 5</span>
+                                <h3 class="font-serif text-xl font-bold tracking-wide text-disco-radiantGold">AVATAR STATE</h3>
+                            </div>
+                            <span class="text-2xl">🌈</span>
+                        </div>
+                        <p class="text-xs font-semibold text-disco-radiantGold/70 border-b border-white/10 pb-2 mb-3">Wholeness Integration</p>
+                        <ul class="text-xs space-y-2.5 text-white/80">
+                            <li><strong>9:15 AM:</strong> Elite Day Cruise Expedition to Tortuga Island container.</li>
+                            <li><strong>Return:</strong> Core Integration Workshop: "The Art of Arrival".</li>
+                            <li><strong>7:00 PM:</strong> Master Celebration Banquet: "Gratitude Gola" Feast.</li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-white/10 flex justify-between items-center text-[10px] uppercase tracking-widest font-bold">
+                        <span class="text-white/50">Dress Aesthetic:</span>
+                        <span class="text-disco-radiantGold">Full Spectrum Neon</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: HIGH-END CHECKOUT & ACCOMMODATIONS MARKETPLACE -->
+    <section id="marketplace" class="relative py-28 px-4 bg-disco-deepCharcoal">
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="text-center mb-16">
+                <span class="text-xs font-bold tracking-widest text-disco-neonPink uppercase px-3 py-1 bg-disco-neonPink/10 rounded-full border border-disco-neonPink/30">Stripe Payment Infrastructure Node</span>
+                <h2 class="font-serif text-4xl md:text-5xl font-black mt-4 mb-4 tracking-wide">Select Your Prototyped Tier</h2>
+                <p class="text-white/60 max-w-xl mx-auto text-sm">
+                    Review premium room vectors, spa selections, and programmatic add-ons to verify currency endpoints.
+                </p>
+            </div>
+
+            <!-- Add-on reactive calculator banner -->
+            <div class="mb-10 p-4 rounded-2xl glass-card border border-disco-peacockTeal/30 flex flex-col md:flex-row items-center justify-between gap-4 max-w-4xl mx-auto shadow-xl">
+                <div class="flex items-center space-x-3 text-center md:text-left">
+                    <span class="text-2xl">🛒</span>
+                    <div>
+                        <h4 class="font-serif text-sm font-bold tracking-wider text-disco-peacockTeal">LIVE BUILDER ACTIVE</h4>
+                        <p class="text-[11px] text-white/60">Toggle Programmatic Add-ons below to watch your total process in real-time.</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <div class="text-right">
+                        <span class="text-[10px] uppercase tracking-widest text-white/40 font-bold">Selected Base:</span>
+                        <div id="active-package-display" class="text-xs font-bold text-white uppercase">VIP Elemental ($4,950)</div>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-[10px] uppercase tracking-widest text-disco-neonPink font-bold">Total Aggregate:</span>
+                        <div id="live-total-display" class="text-xl font-bold text-disco-neonGreen font-mono">$4,950</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Package Component Card 1: Standard Tier -->
+                <div id="pkg-card-standard" onclick="selectBasePackage('standard', 3450)" class="glass-card rounded-3xl p-8 border border-white/10 relative flex flex-col justify-between transform hover:scale-[1.02] transition-all duration-300 cursor-pointer group">
+                    <div class="absolute top-4 right-4 w-4 h-4 rounded-full border-2 border-white/40 flex items-center justify-center group-hover:border-disco-neonPink">
+                        <div id="radio-standard" class="w-2 h-2 rounded-full bg-transparent"></div>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold tracking-widest uppercase text-white/50 block mb-2">Essential Access</span>
+                        <h3 class="font-serif text-2xl font-bold mb-4">Standard Alignment Package</h3>
+                        <div class="text-4xl font-black font-serif text-white mb-6">$3,450 <span class="text-xs text-white/40 font-sans tracking-normal">/ ALL INCLUSIVE</span></div>
+                        <ul class="text-xs space-y-4 text-white/70 border-t border-white/10 pt-6">
+                            <li class="flex items-center gap-2">
+                                <span class="text-disco-neonGreen">&check;</span> Five-day luxury resort accommodations package.
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-disco-neonGreen">&check;</span> Complete elemental class trajectory access.
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-disco-neonGreen">&check;</span> standard excursion track options.
+                            </li>
+                        </ul>
+                    </div>
+                    <button onclick="event.stopPropagation(); triggerStripeModal()" class="w-full mt-8 py-3.5 rounded-xl bg-white text-black font-bold uppercase tracking-widest text-xs hover:bg-disco-neonPink hover:text-white transition-colors duration-300">
+                        Launch Checkout Node
+                    </button>
+                </div>
+
+                <!-- Package Component Card 2: VIP Tier (Carly's Highlighted Track) -->
+                <div id="pkg-card-vip" onclick="selectBasePackage('vip', 4950)" class="glass-card rounded-3xl p-8 border-2 border-disco-neonPink bg-gradient-to-b from-disco-plum/80 to-disco-deepCharcoal relative flex flex-col justify-between transform lg:-translate-y-4 shadow-2xl shadow-disco-neonPink/20 cursor-pointer group hover:scale-[1.02] transition-all duration-300">
+                    <div class="absolute top-4 right-4 w-4 h-4 rounded-full border-2 border-disco-neonPink flex items-center justify-center">
+                        <div id="radio-vip" class="w-2 h-2 rounded-full bg-disco-neonPink"></div>
+                    </div>
+                    <div class="absolute -top-3.5 left-6 bg-gradient-to-r from-disco-neonPink to-disco-sunsetOrange text-black font-bold text-[9px] uppercase tracking-widest px-3 py-1 rounded-full">
+                        Recommended Archetype Path
+                    </div>
+                    <div class="mt-2">
+                        <span class="text-xs font-bold tracking-widest uppercase text-disco-neonPink block mb-2">Full-Spectrum Awakening</span>
+                        <h3 class="font-serif text-3xl font-black mb-4 text-transparent bg-gradient-to-r from-white via-disco-radiantGold to-white bg-clip-text">VIP Elemental Experience</h3>
+                        <div class="text-5xl font-black font-serif text-disco-radiantGold mb-6">$4,950 <span class="text-xs text-white/40 font-sans tracking-normal">/ DEEP TRANSFORMATION</span></div>
+                        <ul class="text-xs space-y-4 text-white/90 border-t border-disco-neonPink/20 pt-6">
+                            <li class="flex items-center gap-2">
+                                <span class="text-disco-neonPink">&check;</span> Elite Master Suite quarters overlay tracking.
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-disco-neonPink">&check;</span> Unrestricted workshop access including "Crouching Yogi".
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-disco-neonPink">&check;</span> All-inclusive high-tier excursion array.
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-disco-radiantGold">&check;</span> Post-retreat integration module with Carly Anne.
+                            </li>
+                        </ul>
+                    </div>
+                    <button onclick="event.stopPropagation(); triggerStripeModal()" class="w-full mt-8 py-4 rounded-xl bg-gradient-to-r from-disco-neonPink via-disco-sunsetOrange to-disco-radiantGold text-black font-black uppercase tracking-widest text-xs hover:opacity-90 transition-opacity duration-300 shadow-xl shadow-disco-neonPink/20">
+                        Secure Spot via Stripe
+                    </button>
+                </div>
+
+                <!-- Add-On Configuration Matrix Container -->
+                <div class="glass-card rounded-3xl p-8 border border-white/10 relative flex flex-col justify-between hover:border-white/20 transition-all">
+                    <div>
+                        <span class="text-xs font-bold tracking-widest uppercase text-disco-neonGreen block mb-2">Ancillary Spa Menu Modules</span>
+                        <h3 class="font-serif text-2xl font-bold mb-6">Programmatic Add-Ons</h3>
+                        
+                        <div class="space-y-4">
+                            <!-- Addon Item 1 -->
+                            <div onclick="toggleAddon('addon-rappelling', 180)" class="flex items-center justify-between p-3.5 rounded-xl bg-white/5 border border-white/10 hover:border-disco-neonPink/50 cursor-pointer transition-all select-none">
+                                <div class="flex items-center space-x-3">
+                                    <input type="checkbox" id="chk-addon-rappelling" class="form-checkbox h-4.5 w-4.5 text-disco-neonPink bg-disco-deepCharcoal border-white/20 rounded focus:ring-0 pointer-events-none">
+                                    <div>
+                                        <h4 class="text-xs font-bold uppercase tracking-wider">Waterfall Rappelling</h4>
+                                        <p class="text-[10px] text-white/50">Day 2 Excursion Track</p>
+                                    </div>
+                                </div>
+                                <span class="text-xs font-mono font-bold text-disco-neonGreen">+$180</span>
+                            </div>
+                            <!-- Addon Item 2 -->
+                            <div onclick="toggleAddon('addon-massage', 220)" class="flex items-center justify-between p-3.5 rounded-xl bg-white/5 border border-white/10 hover:border-disco-neonPink/50 cursor-pointer transition-all select-none">
+                                <div class="flex items-center space-x-3">
+                                    <input type="checkbox" id="chk-addon-massage" class="form-checkbox h-4.5 w-4.5 text-disco-neonPink bg-disco-deepCharcoal border-white/20 rounded focus:ring-0 pointer-events-none">
+                                    <div>
+                                        <h4 class="text-xs font-bold uppercase tracking-wider">Deep Jungle Massage</h4>
+                                        <p class="text-[10px] text-white/50">Resort Spa Pavilion Add-on</p>
+                                    </div>
+                                </div>
+                                <span class="text-xs font-mono font-bold text-disco-neonGreen">+$220</span>
+                            </div>
+                            <!-- Addon Item 3 -->
+                            <div onclick="toggleAddon('addon-sweat', 150)" class="flex items-center justify-between p-3.5 rounded-xl bg-white/5 border border-white/10 hover:border-disco-neonPink/50 cursor-pointer transition-all select-none">
+                                <div class="flex items-center space-x-3">
+                                    <input type="checkbox" id="chk-addon-sweat" class="form-checkbox h-4.5 w-4.5 text-disco-neonPink bg-disco-deepCharcoal border-white/20 rounded focus:ring-0 pointer-events-none">
+                                    <div>
+                                        <h4 class="text-xs font-bold uppercase tracking-wider">Temazcal Sacred Lodge</h4>
+                                        <p class="text-[10px] text-white/50">Day 3 Fire Lodge Protocol</p>
+                                    </div>
+                                </div>
+                                <span class="text-xs font-mono font-bold text-disco-neonGreen">+$150</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-[11px] text-white/40 italic leading-snug mt-6">
+                        *Note: Add-ons can be integrated directly during checkout sequence mapping via Stripe API container deployment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ARCHITECTURE FRAMEWORK -->
+    <footer class="relative bg-disco-plum py-16 px-4 border-t border-white/10 text-center">
+        <div class="max-w-4xl mx-auto space-y-8">
+            <h3 class="font-serif text-2xl md:text-3xl font-bold tracking-widest text-white/90">THIS IS YOUR INVITATION TO ARRIVE.</h3>
+            <p class="text-xs text-white/40 tracking-widest uppercase max-w-md mx-auto leading-relaxed">
+                Powered by Arrive Yoga & Wellness Center Matrix Architecture. <br>
+                Production Node Baseline 2026. All rights preserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- STRIPE SIMULATOR & VALIDATION CUSTOM MODALS (NO ALERTS GUARANTEE) -->
+    <div id="stripe-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md hidden transition-all duration-300">
+        <div class="glass-card rounded-3xl w-full max-w-md border border-disco-neonPink/40 overflow-hidden shadow-2xl relative">
+            <button onclick="closeStripeModal()" class="absolute top-4 right-4 text-white/60 hover:text-white text-xl font-bold">&times;</button>
+            
+            <div class="p-6 md:p-8 space-y-6">
+                <div class="text-center">
+                    <span class="text-xs uppercase font-extrabold tracking-widest text-disco-neonPink">Secure Checkout Matrix</span>
+                    <h3 class="font-serif text-2xl font-bold text-white mt-1">Stripe Checkout Node</h3>
+                </div>
+
+                <!-- Live Statement Summary -->
+                <div class="bg-disco-plum/80 border border-white/10 p-4 rounded-xl space-y-2 text-xs">
+                    <div class="flex justify-between">
+                        <span class="text-white/60">Selected Container:</span>
+                        <span id="modal-package-name" class="font-semibold text-white">VIP Elemental Experience</span>
+                    </div>
+                    <div id="modal-addons-list" class="space-y-1 text-white/50 border-t border-white/10 pt-2 mt-2">
+                        <!-- Addon strings mapped in dynamically -->
+                    </div>
+                    <div class="flex justify-between border-t border-white/10 pt-2 mt-2 text-sm font-bold">
+                        <span class="text-disco-peacockTeal">Amount Authorization:</span>
+                        <span id="modal-total-price" class="text-disco-neonGreen">$4,950</span>
+                    </div>
+                </div>
+
+                <!-- Simulation Form -->
+                <form id="payment-form" onsubmit="executePayment(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-[10px] uppercase font-bold tracking-widest text-white/50 mb-1.5">Card Number</label>
+                        <div class="relative">
+                            <input type="text" value="4242 •••• •••• 4242" disabled class="w-full bg-disco-deepCharcoal/90 border border-white/20 rounded-xl px-4 py-3 text-sm text-white/80 focus:outline-none cursor-not-allowed font-mono">
+                            <span class="absolute right-3.5 top-3 text-xs text-disco-radiantGold">🔒 Secure</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-[10px] uppercase font-bold tracking-widest text-white/50 mb-1.5">Expiry Date</label>
+                            <input type="text" placeholder="12 / 29" required class="w-full bg-disco-deepCharcoal/80 border border-white/20 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-disco-neonPink font-mono text-center">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] uppercase font-bold tracking-widest text-white/50 mb-1.5">CVC/CVV</label>
+                            <input type="text" placeholder="424" required class="w-full bg-disco-deepCharcoal/80 border border-white/20 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-disco-neonPink font-mono text-center">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-disco-neonPink to-disco-sunsetOrange text-black font-black uppercase tracking-widest text-xs hover:opacity-90 transition-opacity">
+                        Process Secure Payment
+                    </button>
+                </form>
+
+                <!-- Processing state overlay -->
+                <div id="modal-processing-state" class="absolute inset-0 bg-disco-plum/95 flex flex-col items-center justify-center space-y-4 p-8 hidden">
+                    <div class="w-12 h-12 rounded-full border-4 border-disco-neonPink border-t-transparent animate-spin"></div>
+                    <h4 class="font-serif text-lg font-bold text-white tracking-wider">Syncing Ledger Endpoints...</h4>
+                    <p class="text-[10px] text-white/50 uppercase tracking-wider text-center">Transmitting encrypted token arrays via Stripe Gateway API</p>
+                </div>
+
+                <!-- Success State Overlay -->
+                <div id="modal-success-state" class="absolute inset-0 bg-disco-plum flex flex-col items-center justify-center space-y-6 p-8 text-center hidden">
+                    <div class="w-16 h-16 rounded-full bg-disco-neonGreen text-black flex items-center justify-center text-3xl font-bold animate-bounce shadow-lg shadow-disco-neonGreen/20">
+                        ✓
+                    </div>
+                    <div>
+                        <h4 class="font-serif text-2xl font-bold text-disco-neonGreen tracking-wider mb-2">Ledger Secured!</h4>
+                        <p class="text-xs text-white/80 leading-relaxed">Your custom container booking has finalized successfully. Welcome to Costa Rica.</p>
+                    </div>
+                    <div class="p-4 bg-white/5 border border-white/10 rounded-xl w-full text-left">
+                        <p class="text-[9px] uppercase tracking-widest text-disco-radiantGold font-bold mb-1">Your Sacred Intention Checklist:</p>
+                        <ul class="text-[10px] text-white/70 space-y-1">
+                            <li>• Pack your corresponding Daily Dress Aesthetics</li>
+                            <li>• Arrive at San José Mineta Airport (SJO) on Day 1</li>
+                            <li>• Complete Pre-Departure Consciousness Brief</li>
+                        </ul>
+                    </div>
+                    <button onclick="closeStripeModal()" class="px-6 py-2.5 rounded-full bg-white text-black font-bold uppercase tracking-widest text-[10px] hover:bg-disco-peacockTeal hover:text-black transition-colors">
+                        Ready To Arrive
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NOTIFICATION DIALOG SYSTEM (CRUCIAL REPLACEMENT FOR BROWSER ALERTS) -->
+    <div id="notification-dialog" class="fixed bottom-6 right-6 z-50 max-w-sm glass-card border border-disco-neonPink/40 rounded-2xl p-4 shadow-2xl hidden transform translate-y-10 opacity-0 transition-all duration-300">
+        <div class="flex items-start space-x-3">
+            <span class="text-xl">⚠️</span>
+            <div class="flex-1">
+                <h4 id="notif-title" class="text-xs uppercase font-extrabold tracking-widest text-disco-neonPink mb-1">System Error</h4>
+                <p id="notif-message" class="text-xs text-white/80 leading-relaxed">Name and email parameters are mandatory to initialize.</p>
+            </div>
+            <button onclick="hideNotification()" class="text-white/40 hover:text-white text-sm font-bold">&times;</button>
+        </div>
+    </div>
+
+    <!-- INTERACTIVE SCRIPT LOGIC ENGINE -->
+    <script>
+        // Interactive Canvas Backdrop Logic (Generates real responsive particle system in Hero card)
+        const canvas = document.getElementById('psychedelic-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        let mouseX = 0;
+        let mouseY = 0;
+
+        function resizeCanvas() {
+            const container = canvas.parentElement;
+            canvas.width = container.clientWidth;
+            canvas.height = container.clientHeight;
+        }
+
+        class Particle {
+            constructor() {
+                this.reset();
+            }
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 3.5 + 1;
+                this.speedX = Math.random() * 1.5 - 0.75;
+                this.speedY = Math.random() * 1.5 - 0.75;
+                const colors = ['#ff007f', '#39ff14', '#00f5d4', '#ffd700', '#ff5e00'];
+                this.color = colors[Math.floor(Math.random() * colors.length)];
+                this.alpha = Math.random() * 0.8 + 0.2;
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+
+                // Move toward cursor moderately
+                const dx = mouseX - this.x;
+                const dy = mouseY - this.y;
+                const dist = Math.sqrt(dx*dx + dy*dy);
+                if (dist < 150) {
+                    this.x += (dx / dist) * 0.45;
+                    this.y += (dy / dist) * 0.45;
+                }
+
+                if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) {
+                    this.reset();
+                }
+            }
+            draw() {
+                ctx.save();
+                ctx.globalAlpha = this.alpha;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = this.color;
+                ctx.shadowBlur = 8;
+                ctx.shadowColor = this.color;
+                ctx.fill();
+                ctx.restore();
+            }
+        }
+
+        function initParticles() {
+            particles = [];
+            for (let i = 0; i < 45; i++) {
+                particles.push(new Particle());
+            }
+        }
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+            requestAnimationFrame(animateParticles);
+        }
+
+        // Mouse listeners for dynamic interactive vortex shifting
+        canvas.addEventListener('mousemove', (e) => {
+            const rect = canvas.getBoundingClientRect();
+            mouseX = e.clientX - rect.left;
+            mouseY = e.clientY - rect.top;
+        });
+
+        canvas.addEventListener('mouseleave', () => {
+            mouseX = canvas.width / 2;
+            mouseY = canvas.height / 2;
+        });
+
+        window.onload = function() {
+            resizeCanvas();
+            initParticles();
+            animateParticles();
+            window.addEventListener('resize', () => {
+                resizeCanvas();
+                initParticles();
+            });
+        };
+
+        // Generative Atmospheric Web Audio Synth Player
+        let audioCtx = null;
+        let ambientOsc = null;
+        let ambientOsc2 = null;
+        let lfo = null;
+        let isAtmospherePlaying = false;
+
+        function toggleAtmosphere() {
+            const dot = document.getElementById('player-dot');
+            const txt = document.getElementById('player-text');
+            const bars = document.getElementById('visualizer-bars');
+
+            if (!isAtmospherePlaying) {
+                // Initialize Web Audio
+                if (!audioCtx) {
+                    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                }
+
+                // Ambient Low Pad Chord
+                ambientOsc = audioCtx.createOscillator();
+                ambientOsc2 = audioCtx.createOscillator();
+                lfo = audioCtx.createOscillator();
+                
+                const filter = audioCtx.createBiquadFilter();
+                const lfoGain = audioCtx.createGain();
+                const masterGain = audioCtx.createGain();
+
+                ambientOsc.type = 'triangle';
+                ambientOsc2.type = 'sine';
+                lfo.type = 'sine';
+
+                // Meditative low frequency chord (A and E root notes)
+                ambientOsc.frequency.setValueAtTime(110.00, audioCtx.currentTime); // A2 Note
+                ambientOsc2.frequency.setValueAtTime(164.81, audioCtx.currentTime); // E3 Note
+                lfo.frequency.setValueAtTime(0.2, audioCtx.currentTime); // Low pulsing rate
+
+                filter.type = 'lowpass';
+                filter.frequency.setValueAtTime(350, audioCtx.currentTime);
+
+                lfoGain.gain.setValueAtTime(150, audioCtx.currentTime);
+                masterGain.gain.setValueAtTime(0.25, audioCtx.currentTime); // Low volume ambient overlay
+
+                // Connections
+                lfo.connect(lfoGain);
+                lfoGain.connect(filter.frequency); // Modulate lowpass filter cut-off programmatically
+
+                ambientOsc.connect(filter);
+                ambientOsc2.connect(filter);
+                filter.connect(masterGain);
+                masterGain.connect(audioCtx.destination);
+
+                ambientOsc.start();
+                ambientOsc2.start();
+                lfo.start();
+
+                dot.classList.remove('bg-white/40');
+                dot.classList.add('bg-disco-neonGreen', 'animate-pulse-fast');
+                txt.innerText = "PLAYING AMBIENT";
+                bars.classList.remove('hidden');
+                isAtmospherePlaying = true;
+            } else {
+                // Terminate Synth Nodes
+                if (ambientOsc) ambientOsc.stop();
+                if (ambientOsc2) ambientOsc2.stop();
+                if (lfo) lfo.stop();
+
+                dot.classList.add('bg-white/40');
+                dot.classList.remove('bg-disco-neonGreen', 'animate-pulse-fast');
+                txt.innerText = "PLAY AMBIENT";
+                bars.classList.add('hidden');
+                isAtmospherePlaying = false;
+            }
+        }
+
+
+        // Notification Display Wrapper
+        function showNotification(title, message) {
+            const notif = document.getElementById('notification-dialog');
+            document.getElementById('notif-title').innerText = title;
+            document.getElementById('notif-message').innerText = message;
+            
+            notif.classList.remove('hidden');
+            setTimeout(() => {
+                notif.classList.remove('translate-y-10', 'opacity-0');
+            }, 50);
+        }
+
+        function hideNotification() {
+            const notif = document.getElementById('notification-dialog');
+            notif.classList.add('translate-y-10', 'opacity-0');
+            setTimeout(() => {
+                notif.classList.add('hidden');
+            }, 300);
+        }
+
+        // Quiz Data Matrix derived from user metrics
+        const quizData = [
+            {
+                question: "When you imagine your dream retreat, what excites you most?",
+                options: [
+                    { text: "Curling up in nature, grounding deeply in peace.", type: "EARTH" },
+                    { text: "Wading into waterfalls or beach walking near flowing currents.", type: "WATER" },
+                    { text: "Dancing by a bonfire or moving with intense transformation.", type: "FIRE" },
+                    { text: "Sitting in circles swapping stories under open skies.", type: "AIR" }
+                ]
+            },
+            {
+                question: "How do you usually recharge your systemic energy parameters?",
+                options: [
+                    { text: "Journaling, meditating, or maintaining total stillness.", type: "EARTH" },
+                    { text: "Taking fluid walks or practicing yoga by the water.", type: "WATER" },
+                    { text: "Pushing limits physically with adventurous hiking metrics.", type: "FIRE" },
+                    { text: "Deep communication or connection with a tribe.", type: "AIR" }
+                ]
+            },
+            {
+                question: "When challenges materialize, what is your reactive workflow baseline?",
+                options: [
+                    { text: "Slowing down, creating immediate structural stability.", type: "EARTH" },
+                    { text: "Flowing seamlessly with it, trusting shifts in the currents.", type: "WATER" },
+                    { text: "Confronting it head-on, transforming it into dynamic action.", type: "FIRE" },
+                    { text: "Stepping backwards to logically analyze structural vision components.", type: "AIR" }
+                ]
+            },
+            {
+                question: "What ideal souvenir outcome keepsakes resonate with your architecture?",
+                options: [
+                    { text: "A grounding crystal matrix or structural journal resource.", type: "EARTH" },
+                    { text: "A botanical fluid wellness kit with herbal compounds.", type: "WATER" },
+                    { text: "A fiery totem capturing breakthroughs and core intensity metrics.", type: "FIRE" },
+                    { text: "A handwritten text configuration or communication manuscript.", type: "AIR" }
+                ]
+            }
+        ];
+
+        let currentQuestionIndex = 0;
+        let scoreAggregator = { EARTH: 0, WATER: 0, FIRE: 0, AIR: 0 };
+
+        function advanceToQuestions() {
+            const name = document.getElementById('quiz-input-name').value;
+            const email = document.getElementById('quiz-input-email').value;
+            const check = document.getElementById('quiz-input-check').checked;
+            
+            if(!name || !email) {
+                showNotification("Verification Error", "Consciousness data inputs (Name & Email) are required to initialize the mandatory funnel stream.");
+                return;
+            }
+            if(!check) {
+                showNotification("Acknowledge Required", "Please acknowledge your spiritual experience checklist parameters to continue.");
+                return;
+            }
+            
+            document.getElementById('quiz-step-0').classList.add('hidden');
+            document.getElementById('quiz-question-frame').classList.remove('hidden');
+            renderCurrentQuestion();
+        }
+
+        function renderCurrentQuestion() {
+            const currentQuestion = quizData[currentQuestionIndex];
+            document.getElementById('quiz-progress-text').innerText = `Question ${currentQuestionIndex + 1} of ${quizData.length}`;
+            document.getElementById('quiz-progress-bar').style.width = `${((currentQuestionIndex + 1) / quizData.length) * 100}%`;
+            document.getElementById('quiz-question-text').innerText = currentQuestion.question;
+
+            const grid = document.getElementById('quiz-options-grid');
+            grid.innerHTML = "";
+
+            currentQuestion.options.forEach(opt => {
+                const btn = document.createElement('button');
+                btn.className = "w-full text-left p-4 rounded-xl bg-white/5 border border-white/10 hover:border-disco-neonPink hover:bg-disco-plum/40 transition-all text-xs font-sans tracking-wide leading-relaxed";
+                btn.innerText = opt.text;
+                btn.onclick = () => selectOption(opt.type);
+                grid.appendChild(btn);
+            });
+        }
+
+        function selectOption(type) {
+            scoreAggregator[type]++;
+            currentQuestionIndex++;
+
+            if(currentQuestionIndex < quizData.length) {
+                renderCurrentQuestion();
+            } else {
+                displaySynthesisResults();
+            }
+        }
+
+        function displaySynthesisResults() {
+            document.getElementById('quiz-question-frame').classList.add('hidden');
+            document.getElementById('quiz-results-frame').classList.remove('hidden');
+
+            let highestElement = "FIRE";
+            let highestScore = -1;
+
+            for(const [element, score] of Object.entries(scoreAggregator)) {
+                if(score > highestScore) {
+                    highestScore = score;
+                    highestElement = element;
+                }
+            }
+
+            const titles = {
+                EARTH: "🌱 EARTH: THE GROUNDED SOUL",
+                WATER: "🌊 WATER: THE FLOW SEEKER",
+                FIRE: "🔥 FIRE: THE PASSIONATE TRANSFORMER",
+                AIR: "🌬️ AIR: THE VISIONARY CONNECTOR"
+            };
+
+            const descs = {
+                EARTH: "You are steady, nurturing, and wise. Earth is your archetype — you bring peace and presence wherever you go. At the retreat, grounding practices like restorative yoga, bonfire journaling, and quiet nature moments will help you feel fully alive.",
+                WATER: "You are intuitive, empathetic, and adaptable. Water is your archetype — you remind others that healing comes when we allow ourselves to feel and flow. Your retreat experience will shine in waterfall excursions, water ceremonies, and fluid yoga flows.",
+                FIRE: "You are bold, courageous, and full of vitality. Fire is your archetype — you ignite change and spark inspiration in those around you. At the retreat, you’ll thrive in sweat lodges, bonfires, and fiery practices that challenge you to rise.",
+                AIR: "You are expressive, thoughtful, and expansive. Air is your archetype — you uplift others with your perspective, clarity, and communication. At the retreat, you’ll thrive in group sharings, open-air practices, and activities that spark creativity."
+            };
+
+            const reflections = {
+                EARTH: "Where in your life do you need to slow down and sink your roots deeper?",
+                WATER: "Where can you surrender control and allow life to flow more naturally?",
+                FIRE: "Where in your life are you ready to burn away the old and make space for the new?",
+                AIR: "Where in your life can you speak your truth and expand into your fullest vision?"
+            };
+
+            document.getElementById('result-archetype-title').innerText = titles[highestElement];
+            document.getElementById('result-archetype-desc').innerText = descs[highestElement];
+            document.getElementById('result-archetype-reflection').innerText = `"${reflections[highestElement]}"`;
+        }
+
+
+        // LIVE PAYMENT AND ADD-ON ARCHITECT CALCULATOR STATE
+        let activePackageId = 'vip';
+        let packagePrice = 4950;
+        let activeAddons = {};
+
+        function selectBasePackage(pkgId, price) {
+            activePackageId = pkgId;
+            packagePrice = price;
+
+            // Manage visible border states on cards
+            const cardStandard = document.getElementById('pkg-card-standard');
+            const cardVIP = document.getElementById('pkg-card-vip');
+            const radioStandard = document.getElementById('radio-standard');
+            const radioVIP = document.getElementById('radio-vip');
+
+            if (pkgId === 'standard') {
+                cardStandard.className = "glass-card rounded-3xl p-8 border-2 border-disco-neonPink bg-gradient-to-b from-disco-plum/80 to-disco-deepCharcoal relative flex flex-col justify-between transform lg:-translate-y-2 shadow-2xl shadow-disco-neonPink/20 cursor-pointer group hover:scale-[1.02] transition-all duration-300";
+                cardVIP.className = "glass-card rounded-3xl p-8 border border-white/10 relative flex flex-col justify-between transform hover:scale-[1.02] transition-all duration-300 cursor-pointer group";
+                
+                radioStandard.className = "w-2 h-2 rounded-full bg-disco-neonPink";
+                radioVIP.className = "w-2 h-2 rounded-full bg-transparent";
+                document.getElementById('active-package-display').innerText = "Standard Alignment ($3,450)";
+            } else {
+                cardVIP.className = "glass-card rounded-3xl p-8 border-2 border-disco-neonPink bg-gradient-to-b from-disco-plum/80 to-disco-deepCharcoal relative flex flex-col justify-between transform lg:-translate-y-4 shadow-2xl shadow-disco-neonPink/20 cursor-pointer group hover:scale-[1.02] transition-all duration-300";
+                cardStandard.className = "glass-card rounded-3xl p-8 border border-white/10 relative flex flex-col justify-between transform hover:scale-[1.02] transition-all duration-300 cursor-pointer group";
+                
+                radioVIP.className = "w-2 h-2 rounded-full bg-disco-neonPink";
+                radioStandard.className = "w-2 h-2 rounded-full bg-transparent";
+                document.getElementById('active-package-display').innerText = "VIP Elemental ($4,950)";
+            }
+
+            recalculateTotal();
+        }
+
+        function toggleAddon(addonId, price) {
+            const checkbox = document.getElementById(`chk-${addonId}`);
+            if (activeAddons[addonId]) {
+                delete activeAddons[addonId];
+                checkbox.checked = false;
+            } else {
+                activeAddons[addonId] = price;
+                checkbox.checked = true;
+            }
+
+            recalculateTotal();
+        }
+
+        function recalculateTotal() {
+            let total = packagePrice;
+            for (const [id, value] of Object.entries(activeAddons)) {
+                total += value;
+            }
+
+            document.getElementById('live-total-display').innerText = `$${total.toLocaleString()}`;
+        }
+
+
+        // STRIPE MODAL CUSTOM HANDLER
+        function triggerStripeModal() {
+            const modal = document.getElementById('stripe-modal');
+            
+            // Format dynamic transaction statements inside Modal
+            const pName = activePackageId === 'vip' ? 'VIP Elemental Experience' : 'Standard Alignment Package';
+            document.getElementById('modal-package-name').innerText = pName;
+
+            const listContainer = document.getElementById('modal-addons-list');
+            listContainer.innerHTML = '';
+            
+            let total = packagePrice;
+            let addonsCount = 0;
+
+            for (const [id, value] of Object.entries(activeAddons)) {
+                addonsCount++;
+                const item = document.createElement('div');
+                item.className = 'flex justify-between text-white/50';
+                
+                let prettyName = id.replace('addon-', '').toUpperCase();
+                item.innerHTML = `<span>+ Programmatic ${prettyName}:</span><span>$${value}</span>`;
+                listContainer.appendChild(item);
+                total += value;
+            }
+
+            if (addonsCount === 0) {
+                listContainer.innerHTML = '<div class="text-white/30 italic text-center text-[10px]">No auxiliary Spa/Activity items toggled</div>';
+            }
+
+            document.getElementById('modal-total-price').innerText = `$${total.toLocaleString()}`;
+
+            // Reveal modal system
+            modal.classList.remove('hidden');
+        }
+
+        function closeStripeModal() {
+            const modal = document.getElementById('stripe-modal');
+            modal.classList.add('hidden');
+            
+            // Reset state views inside modal for repeat transactions
+            document.getElementById('modal-processing-state').classList.add('hidden');
+            document.getElementById('modal-success-state').classList.add('hidden');
+        }
+
+        function executePayment(e) {
+            e.preventDefault();
+
+            const processing = document.getElementById('modal-processing-state');
+            const success = document.getElementById('modal-success-state');
+
+            processing.classList.remove('hidden');
+
+            // Simulate server network ping-back/handshake latency
+            setTimeout(() => {
+                processing.classList.add('hidden');
+                success.classList.remove('hidden');
+            }, 2500);
+        }
+    </script>
+</body>
+</html>
