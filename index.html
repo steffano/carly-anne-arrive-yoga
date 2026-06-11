@@ -161,15 +161,14 @@
                 <a href="#host-letter" class="text-white/80 hover:text-disco-peacockTeal transition-colors">Letters</a>
                 <a href="#about-host" class="text-white/80 hover:text-disco-radiantGold transition-colors">Carly Anne</a>
                 <a href="#itinerary" class="text-white/80 hover:text-disco-neonGreen transition-colors">The 5-Day Roadmap</a>
-                <a href="#build-retreat" class="text-white/80 hover:text-disco-electricBlue transition-colors">Build Retreat</a>
                 <a href="#quiz-funnel" class="text-disco-peacockTeal hover:text-white flex items-center gap-1.5 font-bold">
                     <span class="inline-block w-2 h-2 rounded-full bg-disco-neonPink animate-pulse-fast"></span>
                     Archetype Quiz
                 </a>
             </nav>
 
-            <a href="#build-retreat" class="px-5 py-2.5 rounded-full text-[10px] font-black tracking-widest uppercase bg-gradient-to-r from-disco-neonPink to-disco-sunsetOrange hover:from-disco-neonGreen hover:to-disco-peacockTeal text-black transition-all duration-500 shadow-[0_0_15px_rgba(255,0,127,0.35)]">
-                Book Experience
+            <a href="#quiz-funnel" class="px-5 py-2.5 rounded-full text-[10px] font-black tracking-widest uppercase bg-gradient-to-r from-disco-neonPink to-disco-sunsetOrange hover:from-disco-neonGreen hover:to-disco-peacockTeal text-black transition-all duration-500 shadow-[0_0_15px_rgba(255,0,127,0.35)] text-center">
+                Initiate your Soul Quiz
             </a>
         </div>
     </header>
@@ -201,9 +200,9 @@
                     <span>Initiate Soul Quiz</span>
                     <span>&rarr;</span>
                 </a>
-                <a href="#build-retreat" class="w-full sm:w-auto px-8 py-4 rounded-full border-2 border-white/40 text-white font-black text-xs tracking-widest uppercase hover:border-disco-neonGreen hover:text-disco-neonGreen transition-all duration-300 backdrop-blur-md bg-white/5">
-                    Customize My Retreat
-                </a>
+                <button onclick="skipToManualQuiz()" class="w-full sm:w-auto px-8 py-4 rounded-full border-2 border-white/40 text-white font-black text-xs tracking-widest uppercase hover:border-disco-neonGreen hover:text-disco-neonGreen transition-all duration-300 backdrop-blur-md bg-white/5">
+                    Skip Directly to Booking
+                </button>
             </div>
 
             <!-- Scroll Indicator -->
@@ -219,7 +218,7 @@
         <div class="max-w-4xl mx-auto text-center">
             <h3 class="font-serif text-xs font-semibold tracking-[0.4em] text-disco-peacockTeal uppercase mb-3">EVERY BODY IS A YOGA BODY</h3>
             <p class="font-sans text-white/95 text-md sm:text-lg italic font-light leading-relaxed max-w-2xl mx-auto mb-8">
-                "Roadblocks on this long winding road teach each of us what unique healing methodologies are most supportive of our personal growth. We have the power to change and shape our world in the palm of our hands."
+                "Roadblocks on this long windy road teach each of us what unique healing methodologies are most supportive of our personal growth. We have the power to change and shape our world in the palm of our hands."
             </p>
             <div class="inline-flex flex-wrap justify-center items-center gap-3 text-[10px] font-mono tracking-wider text-disco-radiantGold uppercase">
                 <span>PREVENTION</span>
@@ -440,502 +439,6 @@
         </div>
     </section>
 
-    <!-- SECTION 5: THE 5-DAY ROADMAP (Elemental Itinerary) -->
-    <section id="itinerary" class="py-24 px-4 bg-black/25 relative">
-        <div class="max-w-7xl mx-auto relative z-10">
-            <div class="text-center mb-16">
-                <span class="text-xs font-black tracking-widest text-disco-neonGreen uppercase px-4 py-2 rounded-full bg-disco-plum/80 border border-disco-neonGreen/35">Interactive Journey</span>
-                <h2 class="font-serif text-4xl sm:text-6xl font-black mt-6 mb-4 text-white">The Elemental Itinerary</h2>
-                <p class="text-white/70 max-w-xl mx-auto text-sm leading-relaxed">
-                    A guided five-day journey through the natural elements, mapped hour-by-hour to support structural healing and absolute presence.
-                </p>
-            </div>
-
-            <!-- Interactive Day Tabs -->
-            <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-12">
-                <button onclick="setItineraryDay(1)" id="tab-day-1" class="px-5 py-3 rounded-xl font-serif text-xs tracking-widest uppercase transition-all duration-300 border bg-disco-neonGreen text-black border-disco-neonGreen">
-                    Day 1: Earth
-                </button>
-                <button onclick="setItineraryDay(2)" id="tab-day-2" class="px-5 py-3 rounded-xl font-serif text-xs tracking-widest uppercase transition-all duration-300 border border-white/20 text-white hover:bg-white/5">
-                    Day 2: Water
-                </button>
-                <button onclick="setItineraryDay(3)" id="tab-day-3" class="px-5 py-3 rounded-xl font-serif text-xs tracking-widest uppercase transition-all duration-300 border border-white/20 text-white hover:bg-white/5">
-                    Day 3: Fire
-                </button>
-                <button onclick="setItineraryDay(4)" id="tab-day-4" class="px-5 py-3 rounded-xl font-serif text-xs tracking-widest uppercase transition-all duration-300 border border-white/20 text-white hover:bg-white/5">
-                    Day 4: Air
-                </button>
-                <button onclick="setItineraryDay(5)" id="tab-day-5" class="px-5 py-3 rounded-xl font-serif text-xs tracking-widest uppercase transition-all duration-300 border border-white/20 text-white hover:bg-white/5">
-                    Day 5: Avatar
-                </button>
-            </div>
-
-            <!-- Dynamic Day Display Cards -->
-            <div class="max-w-4xl mx-auto">
-                
-                <!-- Day 1 Content Card -->
-                <div id="itinerary-card-1" class="luxury-glass rounded-3xl p-6 sm:p-10 border-t-8 border-t-disco-neonGreen space-y-8 relative overflow-hidden">
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/10 pb-6">
-                        <div>
-                            <span class="text-xs uppercase font-mono tracking-widest text-disco-neonGreen font-black">ELEMENTAL GROUNDING</span>
-                            <h3 class="font-serif text-3xl font-black mt-1">DAY 1: EARTH - FOUNDATION</h3>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <span class="px-4 py-1.5 rounded-full bg-disco-neonGreen/10 text-disco-neonGreen text-[10px] font-bold tracking-widest uppercase">Dress: Green & Neutrals</span>
-                            <span class="text-3xl">🌱</span>
-                        </div>
-                    </div>
-
-                    <!-- Hour schedule layout -->
-                    <div class="space-y-6 font-sans">
-                        <div class="flex gap-4 items-start">
-                            <span class="font-mono text-xs font-bold text-disco-neonGreen bg-white/5 px-2.5 py-1 rounded">Arrival Window</span>
-                            <div>
-                                <p class="font-semibold text-sm text-white">SJO Airport Airport Pickups</p>
-                                <p class="text-xs text-white/70 mt-1">Airport transport provided directly to our luxury resort location. Refreshments & welcome light bites provided upon arrival.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4 items-start">
-                            <span class="font-mono text-xs font-bold text-disco-neonGreen bg-white/5 px-2.5 py-1 rounded">5:00 - 6:00 PM</span>
-                            <div>
-                                <p class="font-semibold text-sm text-white">Conscious Community Meet & Greet</p>
-                                <p class="text-xs text-white/70 mt-1">First group communication circle. Unpack and structure intent for the elemental cycle.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4 items-start">
-                            <span class="font-mono text-xs font-bold text-disco-neonGreen bg-white/5 px-2.5 py-1 rounded">6:30 - 7:30 PM</span>
-                            <div>
-                                <p class="font-semibold text-sm text-white">Themed Dinner: "Rooted in Abundance"</p>
-                                <p class="text-xs text-white/70 mt-1">Chef-curated seasonal dishes emphasizing raw native roots and earthy jungle nutrition.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4 items-start">
-                            <span class="font-mono text-xs font-bold text-disco-neonGreen bg-white/5 px-2.5 py-1 rounded">7:30 PM Onwards</span>
-                            <div>
-                                <p class="font-semibold text-sm text-white">Beach Bonfire & Grounding Circle</p>
-                                <p class="text-xs text-white/70 mt-1">"From Root to Rise - The Foundations of Self" introductory workshop as we sink into alignment by the ocean.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Day 2 Content Card -->
-                <div id="itinerary-card-2" class="luxury-glass rounded-3xl p-6 sm:p-10 border-t-8 border-t-disco-peacockTeal space-y-8 relative overflow-hidden hidden">
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/10 pb-6">
-                        <div>
-                            <span class="text-xs uppercase font-mono tracking-widest text-disco-peacockTeal font-black">SEEDING HOPE & EMOTIONAL WATER FLOWS</span>
-                            <h3 class="font-serif text-3xl font-black mt-1">DAY 2: WATER - FEEL & ADAPT</h3>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <span class="px-4 py-1.5 rounded-full bg-disco-peacockTeal/10 text-disco-peacockTeal text-[10px] font-bold tracking-widest uppercase">Dress: Blues & Teals</span>
-                            <span class="text-3xl">🌊</span>
-                        </div>
-                    </div>
-
-                    <div class="space-y-6 font-sans">
-                        <div class="flex gap-4 items-start">
-                            <span class="font-mono text-xs font-bold text-disco-peacockTeal bg-white/5 px-2.5 py-1 rounded">7:00 - 8:00 AM</span>
-                            <div>
-                                <p class="font-semibold text-sm text-white">Organic Local Breakfast & Fruit Juices</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4 items-start">
-                            <span class="font-mono text-xs font-bold text-disco-peacockTeal bg-white/5 px-2.5 py-1 rounded">8:00 - 9:00 AM</span>
-                            <div>
-                                <p class="font-semibold text-sm text-white">The Art of Arrival Yoga Flow Session</p>
-                                <p class="text-xs text-white/70 mt-1">Fluid alignment structures mapped to physical body pathways and emotional balance.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4 items-start">
-                            <span class="font-mono text-xs font-bold text-disco-peacockTeal bg-white/5 px-2.5 py-1 rounded">10:00 AM - 2:00 PM</span>
-                            <div>
-                                <p class="font-semibold text-sm text-white">Excursion Horizon Matrix (Choose One)</p>
-                                <p class="text-xs text-white/70 mt-1">Waterfall hiking, Hanging Bridges path, ATV tour to waterfall jump, Waterfall rappelling, or quiet rest at Playa Hermosa Beach.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4 items-start">
-                            <span class="font-mono text-xs font-bold text-disco-peacockTeal bg-white/5 px-2.5 py-1 rounded">3:30 - 5:00 PM</span>
-                            <div>
-                                <p class="font-semibold text-sm text-white">Somatic Workshop: "Emotional Alchemy"</p>
-                                <p class="text-xs text-white/70 mt-1">Conversations on moving emotional blockages and surrendering rigidity to find alignment.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Day 3 Content Card -->
-                <div id="itinerary-card-3" class="luxury-glass rounded-3xl p-6 sm:p-10 border-t-8 border-t-disco-sunsetOrange space-y-8 relative overflow-hidden hidden">
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/10 pb-6">
-                        <div>
-                            <span class="text-xs uppercase font-mono tracking-widest text-disco-sunsetOrange font-black">IGNITE & TRANSFORM PASSIONS</span>
-                            <h3 class="font-serif text-3xl font-black mt-1">DAY 3: FIRE - POWER & TRUTH</h3>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <span class="px-4 py-1.5 rounded-full bg-disco-sunsetOrange/10 text-disco-sunsetOrange text-[10px] font-bold tracking-widest uppercase">Dress: Orange & Gold</span>
-                            <span class="text-3xl">🔥</span>
-                        </div>
-                    </div>
-
-                    <div class="space-y-6 font-sans">
-                        <div class="flex gap-4 items-start">
-                            <span class="font-mono text-xs font-bold text-disco-sunsetOrange bg-white/5 px-2.5 py-1 rounded">8:00 - 9:00 AM</span>
-                            <div>
-                                <p class="font-semibold text-sm text-white">Power Alignment Yoga Core Focus</p>
-                                <p class="text-xs text-white/70 mt-1">High-vibrancy, active movement testing your edges to burn away ancestral limits.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4 items-start">
-                            <span class="font-mono text-xs font-bold text-disco-sunsetOrange bg-white/5 px-2.5 py-1 rounded">9:30 AM - 2:00 PM</span>
-                            <div>
-                                <p class="font-semibold text-sm text-white">Adventures & Sweats (Choose One)</p>
-                                <p class="text-xs text-white/70 mt-1">Beach & jungle horseback riding, Monkey Mangrove cruise, or the intense, ancient Temazcal Sweat Lodge ceremony.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4 items-start">
-                            <span class="font-mono text-xs font-bold text-disco-sunsetOrange bg-white/5 px-2.5 py-1 rounded">3:30 - 5:00 PM</span>
-                            <div>
-                                <p class="font-semibold text-sm text-white">Workshop: "Our Actions Have Consequences"</p>
-                                <p class="text-xs text-white/70 mt-1">Charting your lineage path: Prevention &rarr; Pain &rarr; Power &rarr; Passion &rarr; Purpose.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4 items-start">
-                            <span class="font-mono text-xs font-bold text-disco-sunsetOrange bg-white/5 px-2.5 py-1 rounded">7:00 PM Onwards</span>
-                            <div>
-                                <p class="font-semibold text-sm text-white">Themed Dinner: "Crouching Yogi, Hidden Lion"</p>
-                                <p class="text-xs text-white/70 mt-1">An energetic culinary exploration of spice, warmth, and culinary alchemy.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Day 4 Content Card -->
-                <div id="itinerary-card-4" class="luxury-glass rounded-3xl p-6 sm:p-10 border-t-8 border-t-white space-y-8 relative overflow-hidden hidden">
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/10 pb-6">
-                        <div>
-                            <span class="text-xs uppercase font-mono tracking-widest text-white/60 font-black">EXPANSIVE PATHWAYS & STORIES</span>
-                            <h3 class="font-serif text-3xl font-black mt-1">DAY 4: AIR - RECONNECT & INTEGRATE</h3>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <span class="px-4 py-1.5 rounded-full bg-white/10 text-white text-[10px] font-bold tracking-widest uppercase">Dress: All White Party</span>
-                            <span class="text-3xl">🌬️</span>
-                        </div>
-                    </div>
-
-                    <div class="space-y-6 font-sans">
-                        <div class="flex gap-4 items-start">
-                            <span class="font-mono text-xs font-bold text-white/60 bg-white/5 px-2.5 py-1 rounded">8:00 - 9:00 AM</span>
-                            <div>
-                                <p class="font-semibold text-sm text-white">Pranayama Breathwork Blueprint</p>
-                                <p class="text-xs text-white/70 mt-1">Clearing systemic congestion, regulating autonomic states, and creating absolute mental headspace.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4 items-start">
-                            <span class="font-mono text-xs font-bold text-white/60 bg-white/5 px-2.5 py-1 rounded">9:30 AM - 2:00 PM</span>
-                            <div>
-                                <p class="font-semibold text-sm text-white">High Air Adventures (Choose One)</p>
-                                <p class="text-xs text-white/70 mt-1">High Canopy Ziplining across mountain ranges, or reflective walks in the local Botanical Butterfly Garden.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4 items-start">
-                            <span class="font-mono text-xs font-bold text-white/60 bg-white/5 px-2.5 py-1 rounded">7:30 - 8:30 PM</span>
-                            <div>
-                                <p class="font-semibold text-sm text-white">Dinner: "It's the Little Things That Count"</p>
-                                <p class="text-xs text-white/70 mt-1">Elegant, cosmic tapas and group storytelling session under high, starry jungle skies.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4 items-start">
-                            <span class="font-mono text-xs font-bold text-white/60 bg-white/5 px-2.5 py-1 rounded">9:00 PM Onwards</span>
-                            <div>
-                                <p class="font-semibold text-sm text-white">Masterclass: "The Space Between Your Thoughts"</p>
-                                <p class="text-xs text-white/70 mt-1">An open-sky meditation circle addressing structural self-care and quiet clarity.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Day 5 Content Card -->
-                <div id="itinerary-card-5" class="luxury-glass rounded-3xl p-6 sm:p-10 border-t-8 border-t-disco-radiantGold space-y-8 relative overflow-hidden hidden bg-gradient-to-b from-disco-plum/90 to-disco-burgundy/95">
-                    <div class="absolute inset-0 zebra-accent-line opacity-10 pointer-events-none rounded-3xl"></div>
-                    
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/10 pb-6 relative z-10">
-                        <div>
-                            <span class="text-xs uppercase font-mono tracking-widest text-disco-radiantGold font-black">THE AVATAR STATE UNLOCKED</span>
-                            <h3 class="font-serif text-3xl font-black mt-1 text-disco-radiantGold">DAY 5: AVATAR - TOTAL FUSION</h3>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <span class="px-4 py-1.5 rounded-full bg-disco-radiantGold/20 text-disco-radiantGold text-[10px] font-bold tracking-widest uppercase">Dress: Full Spectrum Neon</span>
-                            <span class="text-3xl">🌈</span>
-                        </div>
-                    </div>
-
-                    <div class="space-y-6 font-sans relative z-10">
-                        <div class="flex gap-4 items-start">
-                            <span class="font-mono text-xs font-bold text-disco-radiantGold bg-white/5 px-2.5 py-1 rounded">8:00 AM</span>
-                            <div>
-                                <p class="font-semibold text-sm text-white">Slow Flow & Conscious Integration Journaling</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4 items-start">
-                            <span class="font-mono text-xs font-bold text-disco-radiantGold bg-white/5 px-2.5 py-1 rounded">10:30 AM Onwards</span>
-                            <div>
-                                <p class="font-semibold text-sm text-white">Tortuga Island Sailing Adventure</p>
-                                <p class="text-xs text-white/70 mt-1">A premium day-long private catamaran cruise to Tortuga Island with dynamic snorkeling, packed organic lunch, and pristine sand beach connection.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4 items-start">
-                            <span class="font-mono text-xs font-bold text-disco-radiantGold bg-white/5 px-2.5 py-1 rounded">7:00 - 8:00 PM</span>
-                            <div>
-                                <p class="font-semibold text-sm text-white">Final Feast: "Gratitude Gala" Celebration</p>
-                                <p class="text-xs text-white/70 mt-1">Celebrate your integration! A grand multi-course native banquet representing all elements, accompanied by tribal sound tracks and raw cocoa cocktails.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4 items-start">
-                            <span class="font-mono text-xs font-bold text-disco-radiantGold bg-white/5 px-2.5 py-1 rounded">8:30 PM Onwards</span>
-                            <div>
-                                <p class="font-semibold text-sm text-white">Closing Circle & Reflection Bonfire Ceremony</p>
-                                <p class="text-xs text-white/70 mt-1">Return to your routine with a regulated nervous system, functional toolkits, and an integrated soul perspective.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 6: INTERACTIVE BUILD-YOUR-EXPERIENCE CONFIGURATOR -->
-    <section id="build-retreat" class="py-24 px-4 relative bg-black/45">
-        <div class="absolute inset-x-0 top-1/2 -translate-y-1/2 h-[600px] bg-gradient-to-r from-disco-sunsetOrange/10 to-disco-magenta/10 filter blur-[150px] pointer-events-none"></div>
-
-        <div class="max-w-7xl mx-auto relative z-10">
-            <div class="text-center mb-16">
-                <span class="text-xs font-black tracking-widest text-disco-radiantGold uppercase px-4 py-2 rounded-full bg-disco-plum/80 border border-disco-radiantGold/35">Interactive Booking Engine</span>
-                <h2 class="font-serif text-4xl sm:text-6xl font-black mt-6 mb-4">Design Your Retreat</h2>
-                <p class="text-white/70 max-w-xl mx-auto text-sm leading-relaxed">
-                    Choose your foundational container and dynamically add elective excursions or spa rituals to assemble your custom soul-care invoice.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                
-                <!-- Left Options Configuration Panel (8 Columns) -->
-                <div class="lg:col-span-8 space-y-8 font-sans">
-                    
-                    <!-- 1. BASE PACKAGE CONTAINER -->
-                    <div class="luxury-glass rounded-2xl p-6 sm:p-8 space-y-4">
-                        <div class="flex items-center gap-3">
-                            <span class="bg-disco-neonPink/20 text-disco-neonPink px-2.5 py-1 rounded-md text-xs font-bold">Step 1</span>
-                            <h4 class="font-serif text-xl font-bold">Select Foundational Base Container</h4>
-                        </div>
-                        <p class="text-xs text-white/60">Both packages feature organic culinary meals, airport transfers, custom workshops, and standard beach bonfires.</p>
-                        
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
-                            <!-- Standard Selection Card -->
-                            <div onclick="selectPackage('standard')" id="pkg-card-standard" class="p-6 rounded-xl border-2 border-disco-neonGreen bg-disco-plum/60 cursor-pointer transition-all duration-300 relative">
-                                <div class="absolute top-3 right-3 text-disco-neonGreen text-xl" id="pkg-check-standard">✓</div>
-                                <span class="text-[9px] uppercase tracking-widest font-bold text-white/45 block mb-1">Essential Alignment</span>
-                                <h5 class="font-serif text-lg font-black text-white">Standard Base Package</h5>
-                                <p class="text-xs text-white/70 mt-1 leading-relaxed">Shared luxury suites, daily alignment flows, communal workshops.</p>
-                                <div class="text-2xl font-serif font-black text-disco-neonGreen mt-4">$2,200 <span class="text-[10px] font-sans text-white/40">/ ALL-INCLUSIVE</span></div>
-                            </div>
-
-                            <!-- VIP Selection Card -->
-                            <div onclick="selectPackage('vip')" id="pkg-card-vip" class="p-6 rounded-xl border border-white/10 bg-white/5 cursor-pointer hover:border-disco-radiantGold/50 transition-all duration-300 relative">
-                                <div class="absolute top-3 right-3 text-white/20 text-xl hidden" id="pkg-check-vip">✓</div>
-                                <span class="text-[9px] uppercase tracking-widest font-bold text-disco-radiantGold block mb-1">Luxury Presence Suite</span>
-                                <h5 class="font-serif text-lg font-black text-white">VIP Ultimate Experience</h5>
-                                <p class="text-xs text-white/70 mt-1 leading-relaxed">Private master suite, post-retreat 1:1 integration sessions with Carly Anne.</p>
-                                <div class="text-2xl font-serif font-black text-disco-radiantGold mt-4">$3,100 <span class="text-[10px] font-sans text-white/40">/ FULL PRESENCE</span></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 2. OPTIONAL EXCURSION ADD-ONS -->
-                    <div class="luxury-glass rounded-2xl p-6 sm:p-8 space-y-4">
-                        <div class="flex items-center gap-3">
-                            <span class="bg-disco-peacockTeal/20 text-disco-peacockTeal px-2.5 py-1 rounded-md text-xs font-bold">Step 2</span>
-                            <h4 class="font-serif text-xl font-bold">Add Elective Excursions (By Day Themes)</h4>
-                        </div>
-                        <p class="text-xs text-white/60">One main excursion per themed day is recommended to balance movement and absolute quiet downtime.</p>
-
-                        <div class="space-y-3">
-                            <!-- Day 2 Excursions -->
-                            <div class="p-4 bg-white/5 rounded-xl space-y-3 border border-white/10">
-                                <span class="text-[9px] font-bold tracking-wider text-disco-peacockTeal uppercase block">🌊 Day 2: Water Electives</span>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
-                                    <label class="flex items-center justify-between p-2 rounded bg-disco-burgundy/60 hover:bg-white/5 cursor-pointer text-xs">
-                                        <div class="flex items-center gap-2">
-                                            <input type="checkbox" onchange="toggleExcursion('Rainmaker Bridges', 25)" class="form-checkbox text-disco-peacockTeal rounded focus:ring-0">
-                                            <span>Rainmaker Hanging Bridges</span>
-                                        </div>
-                                        <span class="font-mono text-disco-neonGreen">+$25</span>
-                                    </label>
-                                    <label class="flex items-center justify-between p-2 rounded bg-disco-burgundy/60 hover:bg-white/5 cursor-pointer text-xs">
-                                        <div class="flex items-center gap-2">
-                                            <input type="checkbox" onchange="toggleExcursion('Waterfall ATV Jump', 100)" class="form-checkbox text-disco-peacockTeal rounded focus:ring-0">
-                                            <span>ATV to Waterfall Jump</span>
-                                        </div>
-                                        <span class="font-mono text-disco-neonGreen">+$100</span>
-                                    </label>
-                                    <label class="flex items-center justify-between p-2 rounded bg-disco-burgundy/60 hover:bg-white/5 cursor-pointer text-xs">
-                                        <div class="flex items-center gap-2">
-                                            <input type="checkbox" onchange="toggleExcursion('Waterfall Rappelling', 60)" class="form-checkbox text-disco-peacockTeal rounded focus:ring-0">
-                                            <span>Waterfall Rappelling</span>
-                                        </div>
-                                        <span class="font-mono text-disco-neonGreen">+$60</span>
-                                    </label>
-                                    <label class="flex items-center justify-between p-2 rounded bg-disco-burgundy/60 hover:bg-white/5 cursor-pointer text-xs opacity-60">
-                                        <div class="flex items-center gap-2">
-                                            <input type="checkbox" checked disabled class="form-checkbox text-disco-peacockTeal rounded focus:ring-0">
-                                            <span>Playa Hermosa Beach Walk</span>
-                                        </div>
-                                        <span class="font-mono text-white/50">$0</span>
-                                    </label>
-                                </div>
-                            </div>
-
-                            <!-- Day 3 Excursions -->
-                            <div class="p-4 bg-white/5 rounded-xl space-y-3 border border-white/10">
-                                <span class="text-[9px] font-bold tracking-wider text-disco-sunsetOrange uppercase block">🔥 Day 3: Fire Electives</span>
-                                <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
-                                    <label class="flex items-center justify-between p-2 rounded bg-disco-burgundy/60 hover:bg-white/5 cursor-pointer text-xs">
-                                        <div class="flex items-center gap-1">
-                                            <input type="checkbox" onchange="toggleExcursion('Horseback Riding', 70)" class="form-checkbox text-disco-sunsetOrange rounded focus:ring-0">
-                                            <span>Horseback Ride</span>
-                                        </div>
-                                        <span class="font-mono text-disco-neonGreen">+$70</span>
-                                    </label>
-                                    <label class="flex items-center justify-between p-2 rounded bg-disco-burgundy/60 hover:bg-white/5 cursor-pointer text-xs">
-                                        <div class="flex items-center gap-1">
-                                            <input type="checkbox" onchange="toggleExcursion('Temazcal Sweat Lodge', 80)" class="form-checkbox text-disco-sunsetOrange rounded focus:ring-0">
-                                            <span>Temazcal Sweat</span>
-                                        </div>
-                                        <span class="font-mono text-disco-neonGreen">+$80</span>
-                                    </label>
-                                    <label class="flex items-center justify-between p-2 rounded bg-disco-burgundy/60 hover:bg-white/5 cursor-pointer text-xs">
-                                        <div class="flex items-center gap-1">
-                                            <input type="checkbox" onchange="toggleExcursion('Mangrove Cruise', 60)" class="form-checkbox text-disco-sunsetOrange rounded focus:ring-0">
-                                            <span>Mangrove Cruise</span>
-                                        </div>
-                                        <span class="font-mono text-disco-neonGreen">+$60</span>
-                                    </label>
-                                </div>
-                            </div>
-
-                            <!-- Day 4 & Day 5 -->
-                            <div class="p-4 bg-white/5 rounded-xl space-y-3 border border-white/10">
-                                <span class="text-[9px] font-bold tracking-wider text-disco-radiantGold uppercase block">🌬️ & 🌈 Days 4 & 5 Integration Electives</span>
-                                <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
-                                    <label class="flex items-center justify-between p-2 rounded bg-disco-burgundy/60 hover:bg-white/5 cursor-pointer text-xs">
-                                        <div class="flex items-center gap-1">
-                                            <input type="checkbox" onchange="toggleExcursion('Butterfly Gardens', 25)" class="form-checkbox text-disco-radiantGold rounded focus:ring-0">
-                                            <span>Butterfly Garden</span>
-                                        </div>
-                                        <span class="font-mono text-disco-neonGreen">+$25</span>
-                                    </label>
-                                    <label class="flex items-center justify-between p-2 rounded bg-disco-burgundy/60 hover:bg-white/5 cursor-pointer text-xs">
-                                        <div class="flex items-center gap-1">
-                                            <input type="checkbox" onchange="toggleExcursion('Canopy Ziplining', 75)" class="form-checkbox text-disco-radiantGold rounded focus:ring-0">
-                                            <span>Canopy Zipline</span>
-                                        </div>
-                                        <span class="font-mono text-disco-neonGreen">+$75</span>
-                                    </label>
-                                    <label class="flex items-center justify-between p-2 rounded bg-disco-burgundy/60 hover:bg-white/5 cursor-pointer text-xs">
-                                        <div class="flex items-center gap-1">
-                                            <input type="checkbox" onchange="toggleExcursion('Tortuga Catamaran', 160)" class="form-checkbox text-disco-radiantGold rounded focus:ring-0">
-                                            <span>Tortuga Island</span>
-                                        </div>
-                                        <span class="font-mono text-disco-neonGreen">+$160</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 3. OPTIONAL SANCTUARY SPA PACKAGES -->
-                    <div class="luxury-glass rounded-2xl p-6 sm:p-8 space-y-4">
-                        <div class="flex items-center gap-3">
-                            <span class="bg-disco-radiantGold/20 text-disco-radiantGold px-2.5 py-1 rounded-md text-xs font-bold">Step 3</span>
-                            <h4 class="font-serif text-xl font-bold">Elective Sanctuary Spa Packages</h4>
-                        </div>
-                        <p class="text-xs text-white/60">Choose standard 60 minutes therapy or upgrade to our comprehensive 90 minutes systemic recovery treatment.</p>
-
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div>
-                                <label class="block text-[10px] uppercase font-bold tracking-widest text-white/70 mb-2">Spa Protocol Type</label>
-                                <select onchange="selectSpaTreatment(this.value)" class="w-full bg-disco-plum border border-white/20 rounded-xl px-4 py-3 text-white text-xs focus:outline-none focus:border-disco-neonPink transition-all">
-                                    <option value="none">No Spa Service Selected</option>
-                                    <option value="relaxing">Relaxing Soothing Massage ($75)</option>
-                                    <option value="deep-tissue">Therapeutic Deep-Tissue Massage ($90)</option>
-                                    <option value="hot-stone">Aromatherapy Hot Stone Therapy ($95)</option>
-                                    <option value="botanical-scrub">Botanical Body Scrub & Wrap ($85)</option>
-                                </select>
-                            </div>
-
-                            <div>
-                                <label class="block text-[10px] uppercase font-bold tracking-widest text-white/70 mb-2">Treatment Duration</label>
-                                <div class="grid grid-cols-2 gap-2">
-                                    <button onclick="setSpaDuration(60)" id="spa-dur-60" class="py-3 rounded-xl border text-xs font-semibold bg-disco-neonPink border-disco-neonPink text-white transition-all">
-                                        60 Minutes (Standard)
-                                    </button>
-                                    <button onclick="setSpaDuration(90)" id="spa-dur-90" class="py-3 rounded-xl border text-xs font-semibold border-white/10 text-white/60 hover:bg-white/5 transition-all">
-                                        90 Minutes (+$30)
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Right Receipt Breakdown Summary (4 Columns) -->
-                <div class="lg:col-span-4 sticky top-24">
-                    <div class="luxury-glass rounded-2xl p-6 border-2 border-disco-neonPink/40 space-y-6 relative">
-                        <!-- Subtle Cheetah design alignment -->
-                        <div class="absolute inset-0 cheetah-accent opacity-[0.03] pointer-events-none rounded-2xl"></div>
-
-                        <div class="border-b border-white/10 pb-4">
-                            <h4 class="font-serif text-lg font-black text-disco-radiantGold uppercase">Experience Summary</h4>
-                            <p class="text-[9px] text-white/40 tracking-wider">Dynamic alignment calculations baseline</p>
-                        </div>
-
-                        <!-- Live Details Breakdown lists -->
-                        <div class="space-y-3 font-sans text-xs">
-                            <div class="flex justify-between">
-                                <span class="text-white/60" id="receipt-pkg-name">Standard Base Package</span>
-                                <span class="font-mono text-white" id="receipt-pkg-price">$2,200.00</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="text-white/60">Themed Excursions Added</span>
-                                <span class="font-mono text-white" id="receipt-excursion-price">$0.00</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="text-white/60">Elective Spa Protocol</span>
-                                <span class="font-mono text-white" id="receipt-spa-price">$0.00</span>
-                            </div>
-                            <div class="border-t border-white/10 pt-3 flex justify-between text-sm font-bold">
-                                <span class="text-disco-peacockTeal font-serif uppercase tracking-wider">Estimated Total</span>
-                                <span class="font-mono text-disco-neonGreen" id="receipt-total-price">$2,200.00</span>
-                            </div>
-                        </div>
-
-                        <!-- Deposit requirements -->
-                        <div class="bg-white/5 border border-white/10 p-4 rounded-xl text-center">
-                            <span class="text-[9px] font-mono tracking-widest text-disco-radiantGold uppercase block mb-1">🔐 Required Reservation Deposit</span>
-                            <span class="font-serif font-black text-2xl text-white block">$500.00</span>
-                            <span class="text-[10px] text-white/50 block mt-1 leading-snug">Lock in your suite assignment today. Dynamic remainder is due 30 days before departure.</span>
-                        </div>
-
-                        <button onclick="triggerCheckoutFlow()" class="w-full py-4 rounded-xl bg-gradient-to-r from-disco-neonPink via-disco-sunsetOrange to-disco-radiantGold text-black font-black uppercase tracking-widest text-xs hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-disco-neonPink/25">
-                            Lock Reservation via Stripe &rarr;
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
     <!-- SECTION 7: ELEMENTAL PORTAL TUNNEL (QUIZ ENGINE) -->
     <section id="quiz-funnel" class="py-24 px-4 relative">
         <div class="absolute inset-x-0 top-1/2 -translate-y-1/2 h-[500px] bg-gradient-to-r from-disco-magenta/15 to-disco-peacockTeal/15 filter blur-[100px] pointer-events-none"></div>
@@ -945,8 +448,13 @@
                 <span class="text-xs font-black tracking-widest text-disco-neonPink uppercase px-4 py-1.5 rounded-full bg-disco-plum/90 border border-disco-neonPink/40 shadow-md">Required Alignment Portal</span>
                 <h2 class="font-serif text-4xl sm:text-6xl font-black tracking-wide mt-6 mb-4">Discover Your Sacred Archetype</h2>
                 <p class="text-white/80 max-w-xl mx-auto text-sm leading-relaxed font-sans">
-                    Before final booking integration, complete this rapid alignment flow to discover if your current season leans Earth, Water, Fire, or Air. This helps customize your onsite integration tools.
+                    Before final booking integration, complete this rapid alignment flow to discover if your current season leans Earth, Water, Fire, or Air. This dynamically selects your custom itinerary and excursions.
                 </p>
+                <div class="mt-4">
+                    <button onclick="skipToManualQuiz()" class="text-xs text-disco-peacockTeal hover:text-white underline transition-colors tracking-wide">
+                        Already Decided? Skip directly to manual archetype selection &rarr;
+                    </button>
+                </div>
             </div>
 
             <!-- INTERACTIVE QUIZ WINDOW -->
@@ -1021,68 +529,374 @@
 
                         <div class="space-y-4 max-w-sm mx-auto">
                             <p class="text-[10px] text-white/50 tracking-wider">Your elemental profile is bound to your registration record. Lock in your customized configurations below.</p>
-                            <a href="#build-retreat" class="block w-full py-4 rounded-xl bg-gradient-to-r from-disco-neonPink via-disco-sunsetOrange to-disco-radiantGold text-black font-black uppercase tracking-widest text-xs hover:scale-105 transition-transform duration-300">
+                            <button onclick="confirmQuizResults()" class="block w-full py-4 rounded-xl bg-gradient-to-r from-disco-neonPink via-disco-sunsetOrange to-disco-radiantGold text-black font-black uppercase tracking-widest text-xs hover:scale-105 transition-transform duration-300">
                                 Finalize My Build Configs &rarr;
-                            </a>
+                            </button>
                         </div>
+                    </div>
+
+                    <!-- STEP 3: Manual Archetype Selection Portal -->
+                    <div id="quiz-manual-selection-panel" class="hidden space-y-6 text-center">
+                        <h3 class="font-serif text-2xl font-bold text-disco-radiantGold">Select Your Core Archetype</h3>
+                        <p class="text-xs text-white/60 max-w-md mx-auto">
+                            Since you are bypassing the active diagnostic flow, select the season that feels closest to your somatic landscape. This sets your curated retreat defaults.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mx-auto">
+                            <!-- Earth Button -->
+                            <button onclick="selectManualArchetype('EARTH')" class="p-6 rounded-2xl border-2 border-disco-neonGreen hover:bg-disco-neonGreen/10 transition-all text-left flex flex-col justify-between h-36">
+                                <div class="flex justify-between w-full items-center">
+                                    <span class="font-serif font-black text-white">🌱 EARTH</span>
+                                    <span class="text-2xl">🌱</span>
+                                </div>
+                                <p class="text-[10px] text-white/70 mt-2">Restorative rest, grounding, quiet introspection.</p>
+                            </button>
+                            <!-- Water Button -->
+                            <button onclick="selectManualArchetype('WATER')" class="p-6 rounded-2xl border-2 border-disco-peacockTeal hover:bg-disco-peacockTeal/10 transition-all text-left flex flex-col justify-between h-36">
+                                <div class="flex justify-between w-full items-center">
+                                    <span class="font-serif font-black text-white">🌊 WATER</span>
+                                    <span class="text-2xl">🌊</span>
+                                </div>
+                                <p class="text-[10px] text-white/70 mt-2">Fluid flow, emotional alchemy, dynamic water adventure.</p>
+                            </button>
+                            <!-- Fire Button -->
+                            <button onclick="selectManualArchetype('FIRE')" class="p-6 rounded-2xl border-2 border-disco-sunsetOrange hover:bg-disco-sunsetOrange/10 transition-all text-left flex flex-col justify-between h-36">
+                                <div class="flex justify-between w-full items-center">
+                                    <span class="font-serif font-black text-white">🔥 FIRE</span>
+                                    <span class="text-2xl">🔥</span>
+                                </div>
+                                <p class="text-[10px] text-white/70 mt-2">Transforming edges, power yoga, high intensity sweating.</p>
+                            </button>
+                            <!-- Air Button -->
+                            <button onclick="selectManualArchetype('AIR')" class="p-6 rounded-2xl border-2 border-white/50 hover:bg-white/10 transition-all text-left flex flex-col justify-between h-36">
+                                <div class="flex justify-between w-full items-center">
+                                    <span class="font-serif font-black text-white">🌬️ AIR</span>
+                                    <span class="text-2xl">🌬️</span>
+                                </div>
+                                <p class="text-[10px] text-white/70 mt-2">Expansive canopy hikes, deep pranayama, stargazing.</p>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: ACCESSIBLE ACCOMMODATIONS -->
+    <section id="accommodations" class="py-24 px-4 bg-black/45 relative border-t border-white/5">
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center mb-16">
+                <span class="text-xs font-black tracking-widest text-disco-radiantGold uppercase px-4 py-2 rounded-full bg-disco-plum/80 border border-disco-radiantGold/35">Luxury Sanctuaries</span>
+                <h2 class="font-serif text-4xl sm:text-6xl font-black mt-6 mb-4">Where Comfort Meets Grandeur</h2>
+                <p class="text-white/70 max-w-xl mx-auto text-sm leading-relaxed">
+                    Our suites at Amanti Resort are twice the size of standard local hotel rooms, designed for absolute somatic rest.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="luxury-glass p-6 rounded-3xl border border-disco-neonPink/20 hover:scale-[1.02] transition-transform duration-300">
+                    <span class="text-4xl block mb-4">🏰</span>
+                    <h3 class="font-serif text-xl font-bold text-disco-radiantGold mb-2">Space & Majesty</h3>
+                    <p class="text-xs text-white/75 leading-relaxed font-sans">
+                        Step into over 430 sq. ft. of curated comfort featuring a private kitchenette, spa-style bathrooms, custom artwork, en-suite tables, and chairs.
+                    </p>
+                </div>
+                <div class="luxury-glass p-6 rounded-3xl border border-disco-neonGreen/20 hover:scale-[1.02] transition-transform duration-300">
+                    <span class="text-4xl block mb-4">🛏️</span>
+                    <h3 class="font-serif text-xl font-bold text-disco-neonGreen mb-2">Royal Resting</h3>
+                    <p class="text-xs text-white/75 leading-relaxed font-sans">
+                        Plush bedding fitted with premium memory foam mattress toppers. Unwind and rest deeply in rooms tailored specifically to support nervous system restoration.
+                    </p>
+                </div>
+                <div class="luxury-glass p-6 rounded-3xl border border-disco-peacockTeal/20 hover:scale-[1.02] transition-transform duration-300">
+                    <span class="text-4xl block mb-4">🌴</span>
+                    <h3 class="font-serif text-xl font-bold text-disco-peacockTeal mb-2">Open Jungle Scenery</h3>
+                    <p class="text-xs text-white/75 leading-relaxed font-sans">
+                        Settle into breezy terraces looking out to wild green canopies, with ambient native bird sounds that help lower cortisol naturally.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9: DINING AT SWAY -->
+    <section id="dining-sway" class="py-24 px-4 bg-gradient-to-b from-[#1b002c]/40 to-[#4c004f]/40 relative">
+        <div class="max-w-5xl mx-auto relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="text-xs font-black tracking-widest text-disco-peacockTeal uppercase">The Culinary Art of Nourishment</span>
+                    <h2 class="font-serif text-4xl sm:text-5xl font-black leading-tight text-white">SWAY Restaurant & Lounge</h2>
+                    <p class="text-sm text-white/80 leading-relaxed font-sans">
+                        Our dining service, offered by the highly esteemed **SWAY Restaurant & Lounge**, features healthy, vibrant, and flavorful menu options thoughtfully prepared by a dynamic staff of world-class chefs.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 font-sans text-xs">
+                        <div class="flex items-center gap-2">
+                            <span class="text-disco-neonPink">✔</span>
+                            <span>All Meals Fully Included</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-disco-neonGreen">✔</span>
+                            <span>Vegan & Gluten-Free Plans</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-disco-peacockTeal">✔</span>
+                            <span>Fresh Smoothie & Juice Bar</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-disco-radiantGold">✔</span>
+                            <span>Detox-Friendly Customization</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-5">
+                    <div class="p-8 rounded-3xl luxury-glass border border-disco-neonPink/30 relative text-center">
+                        <div class="absolute inset-0 cheetah-accent opacity-[0.03] pointer-events-none"></div>
+                        <span class="text-5xl block mb-4">🍹</span>
+                        <h4 class="font-serif text-xl font-bold text-disco-neonPink mb-2">Vibrant Body Fuel</h4>
+                        <p class="text-xs text-white/70 leading-relaxed font-sans">
+                            We believe that food should nourish the body AND delight the senses. Balance raw native nutrients, tropical spices, and culinary creativity at our open-air SWAY pavilion.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 8: RESORT SHARED SPACES GALLERY -->
-    <section class="py-24 px-4 bg-black/45 relative border-t border-white/5">
+    <!-- SECTION 6: INTERACTIVE BUILD-YOUR-EXPERIENCE CONFIGURATOR (HIDDEN UNTIL QUIZ/Bypass TRIGGERED) -->
+    <section id="build-retreat" class="py-24 px-4 relative bg-black/45 hidden">
+        <div class="absolute inset-x-0 top-1/2 -translate-y-1/2 h-[600px] bg-gradient-to-r from-disco-sunsetOrange/10 to-disco-magenta/10 filter blur-[150px] pointer-events-none"></div>
+
         <div class="max-w-7xl mx-auto relative z-10">
             <div class="text-center mb-16">
-                <span class="text-xs font-bold tracking-widest text-disco-radiantGold uppercase">Tropical Sanctuary Locations</span>
-                <h2 class="font-serif text-4xl sm:text-5xl font-black mt-4 mb-2">Amanti Resort Shared Spaces</h2>
-                <p class="text-xs text-white/60">An open layout tailored for collaborative integration, physical flow, and quiet self-reflection</p>
+                <span class="text-xs font-black tracking-widest text-disco-radiantGold uppercase px-4 py-2 rounded-full bg-disco-plum/80 border border-disco-radiantGold/35">Interactive Booking Engine</span>
+                <h2 class="font-serif text-4xl sm:text-6xl font-black mt-6 mb-4">Design Your Retreat</h2>
+                <p class="text-white/70 max-w-xl mx-auto text-sm leading-relaxed">
+                    Based on your elemental results, we have curated custom baseline options below. Customize your excursions or spa parameters dynamically.
+                </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Space 1 -->
-                <div class="luxury-glass rounded-2xl overflow-hidden p-6 space-y-4 border border-white/10 hover:border-disco-peacockTeal/45 transition-colors">
-                    <span class="text-3xl">☕</span>
-                    <h4 class="font-serif text-lg font-bold text-white">Café Terrace</h4>
-                    <p class="text-xs text-white/70 leading-relaxed font-sans">
-                        String-lit garden patio with bistro tables under native palms. Beautifully optimized for sunrise cappuccinos, light bites, and shared dialogue after flow sessions.
-                    </p>
-                    <span class="text-[9px] font-mono uppercase bg-white/5 px-2.5 py-1 rounded text-white/40 block w-max">Morning Coffee & Journaling</span>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Left Options Configuration Panel (8 Columns) -->
+                <div class="lg:col-span-8 space-y-8 font-sans">
+                    
+                    <!-- 1. BASE PACKAGE CONTAINER -->
+                    <div class="luxury-glass rounded-2xl p-6 sm:p-8 space-y-4">
+                        <div class="flex items-center gap-3">
+                            <span class="bg-disco-neonPink/20 text-disco-neonPink px-2.5 py-1 rounded-md text-xs font-bold">Step 1</span>
+                            <h4 class="font-serif text-xl font-bold">Select Foundational Base Container</h4>
+                        </div>
+                        <p class="text-xs text-white/60">Both packages feature organic culinary meals, airport transfers, custom workshops, and standard beach bonfires.</p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+                            <!-- Standard Selection Card -->
+                            <div onclick="selectPackage('standard')" id="pkg-card-standard" class="p-6 rounded-xl border-2 border-disco-neonGreen bg-disco-plum/60 cursor-pointer transition-all duration-300 relative">
+                                <div class="absolute top-3 right-3 text-disco-neonGreen text-xl" id="pkg-check-standard">✓</div>
+                                <span class="text-[9px] uppercase tracking-widest font-bold text-white/45 block mb-1">Essential Alignment</span>
+                                <h5 class="font-serif text-lg font-black text-white">Standard Base Package</h5>
+                                <p class="text-xs text-white/70 mt-1 leading-relaxed">Shared luxury suites, daily alignment flows, communal workshops.</p>
+                                <div class="text-2xl font-serif font-black text-disco-neonGreen mt-4">$1,895 <span class="text-[10px] font-sans text-white/40">/ ALL-INCLUSIVE</span></div>
+                            </div>
+
+                            <!-- VIP Selection Card -->
+                            <div onclick="selectPackage('vip')" id="pkg-card-vip" class="p-6 rounded-xl border border-white/10 bg-white/5 cursor-pointer hover:border-disco-radiantGold/50 transition-all duration-300 relative">
+                                <div class="absolute top-3 right-3 text-white/20 text-xl hidden" id="pkg-check-vip">✓</div>
+                                <span class="text-[9px] uppercase tracking-widest font-bold text-disco-radiantGold block mb-1">Luxury Presence Suite</span>
+                                <h5 class="font-serif text-lg font-black text-white">VIP Ultimate Experience</h5>
+                                <p class="text-xs text-white/70 mt-1 leading-relaxed">Private master suite, post-retreat 1:1 integration sessions with Carly Anne.</p>
+                                <div class="text-2xl font-serif font-black text-disco-radiantGold mt-4">$2,245 <span class="text-[10px] font-sans text-white/40">/ FULL PRESENCE</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. OPTIONAL EXCURSION ADD-ONS -->
+                    <div class="luxury-glass rounded-2xl p-6 sm:p-8 space-y-4">
+                        <div class="flex items-center gap-3">
+                            <span class="bg-disco-peacockTeal/20 text-disco-peacockTeal px-2.5 py-1 rounded-md text-xs font-bold">Step 2</span>
+                            <h4 class="font-serif text-xl font-bold">Add Elective Excursions (By Day Themes)</h4>
+                        </div>
+                        <p class="text-xs text-white/60">One main excursion per themed day is recommended to balance movement and absolute quiet downtime.</p>
+
+                        <div class="space-y-3">
+                            <!-- Day 2 Excursions -->
+                            <div class="p-4 bg-white/5 rounded-xl space-y-3 border border-white/10">
+                                <span class="text-[9px] font-bold tracking-wider text-disco-peacockTeal uppercase block">🌊 Day 2: Water Electives</span>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                                    <label class="flex items-center justify-between p-2 rounded bg-disco-burgundy/60 hover:bg-white/5 cursor-pointer text-xs">
+                                        <div class="flex items-center gap-2">
+                                            <input type="checkbox" data-name="Rainmaker Bridges" data-price="25" onchange="toggleExcursion('Rainmaker Bridges', 25)" class="form-checkbox text-disco-peacockTeal rounded focus:ring-0">
+                                            <span>Rainmaker Hanging Bridges</span>
+                                        </div>
+                                        <span class="font-mono text-disco-neonGreen">+$25</span>
+                                    </label>
+                                    <label class="flex items-center justify-between p-2 rounded bg-disco-burgundy/60 hover:bg-white/5 cursor-pointer text-xs">
+                                        <div class="flex items-center gap-2">
+                                            <input type="checkbox" data-name="Waterfall ATV Jump" data-price="100" onchange="toggleExcursion('Waterfall ATV Jump', 100)" class="form-checkbox text-disco-peacockTeal rounded focus:ring-0">
+                                            <span>ATV to Waterfall Jump</span>
+                                        </div>
+                                        <span class="font-mono text-disco-neonGreen">+$100</span>
+                                    </label>
+                                    <label class="flex items-center justify-between p-2 rounded bg-disco-burgundy/60 hover:bg-white/5 cursor-pointer text-xs">
+                                        <div class="flex items-center gap-2">
+                                            <input type="checkbox" data-name="Waterfall Rappelling" data-price="60" onchange="toggleExcursion('Waterfall Rappelling', 60)" class="form-checkbox text-disco-peacockTeal rounded focus:ring-0">
+                                            <span>Waterfall Rappelling</span>
+                                        </div>
+                                        <span class="font-mono text-disco-neonGreen">+$60</span>
+                                    </label>
+                                    <label class="flex items-center justify-between p-2 rounded bg-disco-burgundy/60 hover:bg-white/5 cursor-pointer text-xs opacity-60">
+                                        <div class="flex items-center gap-2">
+                                            <input type="checkbox" checked disabled class="form-checkbox text-disco-peacockTeal rounded focus:ring-0">
+                                            <span>Playa Hermosa Beach Walk</span>
+                                        </div>
+                                        <span class="font-mono text-white/50">$0</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Day 3 Excursions -->
+                            <div class="p-4 bg-white/5 rounded-xl space-y-3 border border-white/10">
+                                <span class="text-[9px] font-bold tracking-wider text-disco-sunsetOrange uppercase block">🔥 Day 3: Fire Electives</span>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+                                    <label class="flex items-center justify-between p-2 rounded bg-disco-burgundy/60 hover:bg-white/5 cursor-pointer text-xs">
+                                        <div class="flex items-center gap-1">
+                                            <input type="checkbox" data-name="Horseback Riding" data-price="70" onchange="toggleExcursion('Horseback Riding', 70)" class="form-checkbox text-disco-sunsetOrange rounded focus:ring-0">
+                                            <span>Horseback Ride</span>
+                                        </div>
+                                        <span class="font-mono text-disco-neonGreen">+$70</span>
+                                    </label>
+                                    <label class="flex items-center justify-between p-2 rounded bg-disco-burgundy/60 hover:bg-white/5 cursor-pointer text-xs">
+                                        <div class="flex items-center gap-1">
+                                            <input type="checkbox" data-name="Temazcal Sweat Lodge" data-price="80" onchange="toggleExcursion('Temazcal Sweat Lodge', 80)" class="form-checkbox text-disco-sunsetOrange rounded focus:ring-0">
+                                            <span>Temazcal Sweat</span>
+                                        </div>
+                                        <span class="font-mono text-disco-neonGreen">+$80</span>
+                                    </label>
+                                    <label class="flex items-center justify-between p-2 rounded bg-disco-burgundy/60 hover:bg-white/5 cursor-pointer text-xs">
+                                        <div class="flex items-center gap-1">
+                                            <input type="checkbox" data-name="Mangrove Cruise" data-price="60" onchange="toggleExcursion('Mangrove Cruise', 60)" class="form-checkbox text-disco-sunsetOrange rounded focus:ring-0">
+                                            <span>Mangrove Cruise</span>
+                                        </div>
+                                        <span class="font-mono text-disco-neonGreen">+$60</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Day 4 & Day 5 -->
+                            <div class="p-4 bg-white/5 rounded-xl space-y-3 border border-white/10">
+                                <span class="text-[9px] font-bold tracking-wider text-disco-radiantGold uppercase block">🌬️ & 🌈 Days 4 & 5 Integration Electives</span>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+                                    <label class="flex items-center justify-between p-2 rounded bg-disco-burgundy/60 hover:bg-white/5 cursor-pointer text-xs">
+                                        <div class="flex items-center gap-1">
+                                            <input type="checkbox" data-name="Butterfly Gardens" data-price="25" onchange="toggleExcursion('Butterfly Gardens', 25)" class="form-checkbox text-disco-radiantGold rounded focus:ring-0">
+                                            <span>Butterfly Garden</span>
+                                        </div>
+                                        <span class="font-mono text-disco-neonGreen">+$25</span>
+                                    </label>
+                                    <label class="flex items-center justify-between p-2 rounded bg-disco-burgundy/60 hover:bg-white/5 cursor-pointer text-xs">
+                                        <div class="flex items-center gap-1">
+                                            <input type="checkbox" data-name="Canopy Ziplining" data-price="75" onchange="toggleExcursion('Canopy Ziplining', 75)" class="form-checkbox text-disco-radiantGold rounded focus:ring-0">
+                                            <span>Canopy Zipline</span>
+                                        </div>
+                                        <span class="font-mono text-disco-neonGreen">+$75</span>
+                                    </label>
+                                    <label class="flex items-center justify-between p-2 rounded bg-disco-burgundy/60 hover:bg-white/5 cursor-pointer text-xs">
+                                        <div class="flex items-center gap-1">
+                                            <input type="checkbox" data-name="Tortuga Catamaran" data-price="160" onchange="toggleExcursion('Tortuga Catamaran', 160)" class="form-checkbox text-disco-radiantGold rounded focus:ring-0">
+                                            <span>Tortuga Island</span>
+                                        </div>
+                                        <span class="font-mono text-disco-neonGreen">+$160</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. OPTIONAL SANCTUARY SPA PACKAGES -->
+                    <div class="luxury-glass rounded-2xl p-6 sm:p-8 space-y-4">
+                        <div class="flex items-center gap-3">
+                            <span class="bg-disco-radiantGold/20 text-disco-radiantGold px-2.5 py-1 rounded-md text-xs font-bold">Step 3</span>
+                            <h4 class="font-serif text-xl font-bold">Elective Sanctuary Spa Packages</h4>
+                        </div>
+                        <p class="text-xs text-white/60">Choose standard 60 minutes therapy or upgrade to our comprehensive 90 minutes systemic recovery treatment.</p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-[10px] uppercase font-bold tracking-widest text-white/70 mb-2">Spa Protocol Type</label>
+                                <select id="spa-type-select" onchange="selectSpaTreatment(this.value)" class="w-full bg-disco-plum border border-white/20 rounded-xl px-4 py-3 text-white text-xs focus:outline-none focus:border-disco-neonPink transition-all">
+                                    <option value="none">No Spa Service Selected</option>
+                                    <option value="relaxing">Relaxing Soothing Massage ($75)</option>
+                                    <option value="deep-tissue">Therapeutic Deep-Tissue Massage ($90)</option>
+                                    <option value="hot-stone">Aromatherapy Hot Stone Therapy ($95)</option>
+                                    <option value="botanical-scrub">Botanical Body Scrub & Wrap ($85)</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-[10px] uppercase font-bold tracking-widest text-white/70 mb-2">Treatment Duration</label>
+                                <div class="grid grid-cols-2 gap-2">
+                                    <button onclick="setSpaDuration(60)" id="spa-dur-60" class="py-3 rounded-xl border text-xs font-semibold bg-disco-neonPink border-disco-neonPink text-white transition-all">
+                                        60 Minutes (Standard)
+                                    </button>
+                                    <button onclick="setSpaDuration(90)" id="spa-dur-90" class="py-3 rounded-xl border text-xs font-semibold border-white/10 text-white/60 hover:bg-white/5 transition-all">
+                                        90 Minutes (+$30)
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <!-- Space 2 -->
-                <div class="luxury-glass rounded-2xl overflow-hidden p-6 space-y-4 border border-white/10 hover:border-disco-neonPink/45 transition-colors">
-                    <span class="text-3xl">🍹</span>
-                    <h4 class="font-serif text-lg font-bold text-white">SWAY Lounge</h4>
-                    <p class="text-xs text-white/70 leading-relaxed font-sans">
-                        Breezy, open-air pavilion lounge framed by classic white columns. An ideal venue for collaborative coworking by day and mingling over plant-based mocktails at sunset.
-                    </p>
-                    <span class="text-[9px] font-mono uppercase bg-white/5 px-2.5 py-1 rounded text-white/40 block w-max">Pre-Dinner Mixers</span>
+
+                <!-- Right Receipt Breakdown Summary (4 Columns) -->
+                <div class="lg:col-span-4 sticky top-24">
+                    <div class="luxury-glass rounded-2xl p-6 border-2 border-disco-neonPink/40 space-y-6 relative">
+                        <!-- Subtle Cheetah design alignment -->
+                        <div class="absolute inset-0 cheetah-accent opacity-[0.03] pointer-events-none rounded-2xl"></div>
+
+                        <div class="border-b border-white/10 pb-4">
+                            <h4 class="font-serif text-lg font-black text-disco-radiantGold uppercase">Experience Summary</h4>
+                            <p class="text-[9px] text-white/40 tracking-wider">Dynamic alignment calculations baseline</p>
+                        </div>
+
+                        <!-- Live Details Breakdown lists -->
+                        <div class="space-y-3 font-sans text-xs">
+                            <div class="flex justify-between">
+                                <span class="text-white/60" id="receipt-pkg-name">Standard Base Package</span>
+                                <span class="font-mono text-white" id="receipt-pkg-price">$1,895.00</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-white/60">Themed Excursions Added</span>
+                                <span class="font-mono text-white" id="receipt-excursion-price">$0.00</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-white/60">Elective Spa Protocol</span>
+                                <span class="font-mono text-white" id="receipt-spa-price">$0.00</span>
+                            </div>
+                            <div class="border-t border-white/10 pt-3 flex justify-between text-sm font-bold">
+                                <span class="text-disco-peacockTeal font-serif uppercase tracking-wider">Estimated Total</span>
+                                <span class="font-mono text-disco-neonGreen" id="receipt-total-price">$1,895.00</span>
+                            </div>
+                        </div>
+
+                        <!-- Deposit requirements -->
+                        <div class="bg-white/5 border border-white/10 p-4 rounded-xl text-center">
+                            <span class="text-[9px] font-mono tracking-widest text-disco-radiantGold uppercase block mb-1">🔐 Required Reservation Deposit</span>
+                            <span class="font-serif font-black text-2xl text-white block">$500.00</span>
+                            <span class="text-[10px] text-white/50 block mt-1 leading-snug">Lock in your suite assignment today. Dynamic remainder is due 30 days before departure.</span>
+                        </div>
+
+                        <button onclick="triggerCheckoutFlow()" class="w-full py-4 rounded-xl bg-gradient-to-r from-disco-neonPink via-disco-sunsetOrange to-disco-radiantGold text-black font-black uppercase tracking-widest text-xs hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-disco-neonPink/25">
+                            Lock Reservation via Stripe &rarr;
+                        </button>
+                    </div>
                 </div>
-                <!-- Space 3 -->
-                <div class="luxury-glass rounded-2xl overflow-hidden p-6 space-y-4 border border-white/10 hover:border-disco-radiantGold/45 transition-colors">
-                    <span class="text-3xl">🧘‍♀️</span>
-                    <h4 class="font-serif text-lg font-bold text-white">Sky Yoga Decks</h4>
-                    <p class="text-xs text-white/70 leading-relaxed font-sans">
-                        Covered hardwood decks elevated above the canopy line with birdsong backdrop. Excellent settings for sunrise flows, deep pranayama, and sound bath integrations.
-                    </p>
-                    <span class="text-[9px] font-mono uppercase bg-white/5 px-2.5 py-1 rounded text-white/40 block w-max">Sunrise flows & breathwork</span>
-                </div>
-                <!-- Space 4 -->
-                <div class="luxury-glass rounded-2xl overflow-hidden p-6 space-y-4 border border-white/10 hover:border-disco-neonGreen/45 transition-colors">
-                    <span class="text-3xl">🖼️</span>
-                    <h4 class="font-serif text-lg font-bold text-white">The Art Gallery</h4>
-                    <p class="text-xs text-white/70 leading-relaxed font-sans">
-                        Curated local artwork set in a gorgeous indoor-outdoor structure. A short 10-minute drive from the main facility, perfect for creative design prompts and reflection.
-                    </p>
-                    <span class="text-[9px] font-mono uppercase bg-white/5 px-2.5 py-1 rounded text-white/40 block w-max">Offsite Culture & Prompts</span>
-                </div>
+
             </div>
         </div>
     </section>
 
     <!-- SECTION 9: REVENUE & RETREAT FAQS -->
-    <section id="retreat-faq" class="py-24 px-4 relative">
+    <section id="retreat-faq" class="py-24 px-4 relative border-t border-white/5">
         <div class="max-w-4xl mx-auto relative z-10">
             <div class="text-center mb-16">
                 <span class="text-xs font-black tracking-widest text-disco-neonPink uppercase px-4 py-2 rounded-full bg-disco-plum/80 border border-disco-neonPink/35">Common Inquiries</span>
@@ -1151,15 +965,27 @@
                 If you’re craving a reset that’s luxurious and deeply meaningful… If you want community, clinical clarity, and real tools you can take home—this is your invitation.
             </p>
             <div class="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-sm mx-auto">
-                <a href="#build-retreat" class="w-full py-4 rounded-full bg-disco-neonPink text-white font-black text-xs tracking-widest uppercase hover:bg-white hover:text-black transition-all">
-                    Explore Dates & Packages
+                <a href="#quiz-funnel" class="w-full py-4 rounded-full bg-disco-neonPink text-white font-black text-xs tracking-widest uppercase hover:bg-white hover:text-black transition-all">
+                    Initiate Soul Quiz
                 </a>
-                <a href="#build-retreat" class="w-full py-4 rounded-full bg-white text-black font-black text-xs tracking-widest uppercase hover:bg-disco-neonGreen transition-all">
-                    Reserve My Spot
-                </a>
+                <button onclick="skipToManualQuiz()" class="w-full py-4 rounded-full bg-white text-black font-black text-xs tracking-widest uppercase hover:bg-disco-neonGreen transition-all">
+                    Skip Quiz & Reserve Spot
+                </button>
             </div>
         </div>
     </section>
+
+    <!-- CUSTOM FLOATING ALERT MODAL DIALOG (REPLACING BANNED ALERTS) -->
+    <div id="custom-alert-modal" class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/85 backdrop-blur-sm hidden transition-all duration-300">
+        <div class="luxury-glass max-w-sm w-full rounded-2xl p-6 border border-disco-neonPink/50 text-center space-y-4">
+            <span class="text-3xl" id="custom-alert-icon">✨</span>
+            <h4 class="font-serif text-lg font-black tracking-wide text-disco-radiantGold uppercase" id="custom-alert-title">Notification</h4>
+            <p class="text-xs text-white/80 leading-relaxed font-sans" id="custom-alert-message">Notice details go here.</p>
+            <button onclick="closeCustomAlert()" class="w-full py-2.5 rounded-xl bg-gradient-to-r from-disco-neonPink to-disco-sunsetOrange text-black font-black uppercase text-xs hover:scale-102 transition-transform duration-200">
+                Acknowledge
+            </button>
+        </div>
+    </div>
 
     <!-- FLOATING HIGH-FIDELITY STRIPE CHECKOUT MODAL INTERFACE -->
     <div id="stripe-checkout-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md hidden transition-all duration-300">
@@ -1184,7 +1010,7 @@
                         <span id="stripe-modal-item-name" class="font-bold uppercase block text-white">Standard Base Package</span>
                         <span class="text-[9px] text-white/50 uppercase">Playa Hermosa Suite Assignment</span>
                     </div>
-                    <span id="stripe-modal-item-price" class="font-mono font-bold text-disco-neonGreen">$2,200.00</span>
+                    <span id="stripe-modal-item-price" class="font-mono font-bold text-disco-neonGreen">$1,895.00</span>
                 </div>
                 
                 <div class="border-t border-white/5 pt-2 flex justify-between text-[11px] text-white/60">
@@ -1238,6 +1064,18 @@
 
     <!-- INTERACTIVE JAVASCRIPT LOGIC ENGINE -->
     <script>
+        // Custom Alert Handlers
+        function showCustomAlert(title, message, icon = '✨') {
+            document.getElementById('custom-alert-title').innerText = title;
+            document.getElementById('custom-alert-message').innerText = message;
+            document.getElementById('custom-alert-icon').innerText = icon;
+            document.getElementById('custom-alert-modal').classList.remove('hidden');
+        }
+
+        function closeCustomAlert() {
+            document.getElementById('custom-alert-modal').classList.add('hidden');
+        }
+
         // Quiz Data Matrix mapped directly from custom files
         const quizMatrix = [
             {
@@ -1259,7 +1097,7 @@
                 ]
             },
             {
-                question: "When challenges materialize, what is your somatic baseline?",
+                question: "When challenges materialize, what is your reactive baseline?",
                 options: [
                     { text: "Slowing down, creating immediate structural stability in my body.", type: "EARTH" },
                     { text: "Flowing seamlessly, trusting shifts in life's active currents.", type: "WATER" },
@@ -1280,6 +1118,104 @@
 
         let activeIdx = 0;
         let scoreSheet = { EARTH: 0, WATER: 0, FIRE: 0, AIR: 0 };
+        let currentQuizWinner = 'FIRE';
+
+        // Dynamic pricing config state
+        let configState = {
+            basePackage: 'standard',
+            excursions: {},
+            spaType: 'none',
+            spaDuration: 60
+        };
+
+        // Apply the archetype default configurations programmatically
+        function applyArchetypeDefaults(archetype) {
+            // Reset excursions first
+            configState.excursions = {};
+            const checkboxes = document.querySelectorAll('#build-retreat input[type="checkbox"]');
+            checkboxes.forEach(cb => cb.checked = false);
+
+            if (archetype === 'EARTH') {
+                configState.basePackage = 'standard';
+                setCheckboxState('Rainmaker Bridges', 25, true);
+                setCheckboxState('Butterfly Gardens', 25, true);
+                setSpaProgrammatic('relaxing', 60);
+            } else if (archetype === 'WATER') {
+                configState.basePackage = 'standard';
+                setCheckboxState('Waterfall ATV Jump', 100, true);
+                setCheckboxState('Waterfall Rappelling', 60, true);
+                setSpaProgrammatic('botanical-scrub', 60);
+            } else if (archetype === 'FIRE') {
+                configState.basePackage = 'vip';
+                setCheckboxState('Temazcal Sweat Lodge', 80, true);
+                setCheckboxState('Waterfall Rappelling', 60, true);
+                setSpaProgrammatic('deep-tissue', 90);
+            } else if (archetype === 'AIR') {
+                configState.basePackage = 'standard';
+                setCheckboxState('Canopy Ziplining', 75, true);
+                setCheckboxState('Tortuga Catamaran', 160, true);
+                setSpaProgrammatic('hot-stone', 60);
+            }
+
+            selectPackageVisuals(configState.basePackage);
+            
+            // Show the dynamic Booking Engine Section
+            document.getElementById('build-retreat').classList.remove('hidden');
+            recalculateBooking();
+        }
+
+        // Helper to programmatically toggle checkboxes
+        function setCheckboxState(name, price, isChecked) {
+            const input = document.querySelector(`input[data-name="${name}"]`);
+            if (input) {
+                input.checked = isChecked;
+                if (isChecked) {
+                    configState.excursions[name] = price;
+                } else {
+                    delete configState.excursions[name];
+                }
+            }
+        }
+
+        // Helper to programmatically set spa parameters
+        function setSpaProgrammatic(type, duration) {
+            const select = document.getElementById('spa-type-select');
+            if (select) {
+                select.value = type;
+                configState.spaType = type;
+            }
+            setSpaDuration(duration);
+        }
+
+        // Skip standard Quiz and select manualmente
+        function skipToManualQuiz() {
+            document.getElementById('quiz-lead-form').classList.add('hidden');
+            document.getElementById('quiz-questions-panel').classList.add('hidden');
+            document.getElementById('quiz-results-panel').classList.add('hidden');
+            
+            document.getElementById('quiz-manual-selection-panel').classList.remove('hidden');
+            document.getElementById('quiz-funnel').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Manual Archetype Click handler
+        function selectManualArchetype(archetype) {
+            applyArchetypeDefaults(archetype);
+            document.getElementById('quiz-manual-selection-panel').classList.add('hidden');
+            document.getElementById('quiz-results-panel').classList.remove('hidden');
+            
+            currentQuizWinner = archetype;
+            synthesizeQuizResultsProgrammatic(archetype);
+
+            setTimeout(() => {
+                document.getElementById('build-retreat').scrollIntoView({ behavior: 'smooth' });
+            }, 250);
+        }
+
+        // Confirm Calculated Quiz parameters
+        function confirmQuizResults() {
+            applyArchetypeDefaults(currentQuizWinner);
+            document.getElementById('build-retreat').scrollIntoView({ behavior: 'smooth' });
+        }
 
         // Host Letter Option toggling
         function setLetter(opt) {
@@ -1316,16 +1252,14 @@
             document.getElementById(`tab-day-${day}`).className = `px-5 py-3 rounded-xl font-serif text-xs tracking-widest uppercase transition-all duration-300 border ${activeColors[day]}`;
         }
 
-        // Dynamic pricing config state
-        let configState = {
-            basePackage: 'standard',
-            excursions: {},
-            spaType: 'none',
-            spaDuration: 60
-        };
-
+        // Config state helpers
         function selectPackage(pkg) {
             configState.basePackage = pkg;
+            selectPackageVisuals(pkg);
+            recalculateBooking();
+        }
+
+        function selectPackageVisuals(pkg) {
             if (pkg === 'standard') {
                 document.getElementById('pkg-card-standard').className = "p-6 rounded-xl border-2 border-disco-neonGreen bg-disco-plum/60 cursor-pointer transition-all duration-300 relative";
                 document.getElementById('pkg-check-standard').classList.remove('hidden');
@@ -1337,7 +1271,6 @@
                 document.getElementById('pkg-card-standard').className = "p-6 rounded-xl border border-white/10 bg-white/5 cursor-pointer hover:border-disco-neonGreen/50 transition-all duration-300 relative";
                 document.getElementById('pkg-check-standard').classList.add('hidden');
             }
-            recalculateBooking();
         }
 
         function toggleExcursion(name, price) {
@@ -1366,8 +1299,9 @@
             recalculateBooking();
         }
 
+        // recalculate pricing matching official pricing logic
         function recalculateBooking() {
-            let basePrice = configState.basePackage === 'standard' ? 2200 : 3100;
+            let basePrice = configState.basePackage === 'standard' ? 1895 : 2245;
             let excursionTotal = 0;
             
             for (let val of Object.values(configState.excursions)) {
@@ -1400,7 +1334,7 @@
         }
 
         function triggerCheckoutFlow() {
-            let basePrice = configState.basePackage === 'standard' ? 2200 : 3100;
+            let basePrice = configState.basePackage === 'standard' ? 1895 : 2245;
             let excursionTotal = 0;
             for (let val of Object.values(configState.excursions)) {
                 excursionTotal += val;
@@ -1421,7 +1355,7 @@
             const email = document.getElementById('quiz-email').value;
 
             if(!name || !email) {
-                alert("Please provide your name and email to align your diagnostic profile parameters.");
+                showCustomAlert("Input Error", "Please provide your name and email to align your diagnostic profile parameters.", "⚠️");
                 return;
             }
 
@@ -1459,6 +1393,7 @@
             }
         }
 
+        // Calculated quiz winner synthesizer
         function synthesizeQuizResults() {
             document.getElementById('quiz-questions-panel').classList.add('hidden');
             document.getElementById('quiz-results-panel').classList.remove('hidden');
@@ -1473,6 +1408,12 @@
                 }
             }
 
+            currentQuizWinner = winner;
+            synthesizeQuizResultsProgrammatic(winner);
+            applyArchetypeDefaults(winner); // curates booking selection instantly
+        }
+
+        function synthesizeQuizResultsProgrammatic(winner) {
             const archetypes = {
                 EARTH: {
                     title: "🌱 EARTH: THE GROUNDED HEALER",
@@ -1516,7 +1457,7 @@
         }
 
         function executeMockCheckout() {
-            alert("Contacting Stripe sandbox secure environment...\n\nPayment Succeeded!\nYour luxury suite assignment deposit ($500) has been validated. You are now formally registered! Check your email for itinerary coordinates.");
+            showCustomAlert("Reservation Confirmed!", "Your luxury suite assignment deposit ($500) has been validated. You are now formally registered! Check your email for itinerary coordinates.", "✅");
             closeStripeModal();
         }
 
